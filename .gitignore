@@ -1,0 +1,17 @@
+*~
+*.junk
+
+# latex files
+*.aux
+*.log
+*.bbl
+*.blg
+*.dvi
+
+
+# code files
+*.o
+
+
+# dolphin
+.directory
