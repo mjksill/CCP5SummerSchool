@@ -16,3 +16,6 @@ Welcome to the CCP5 Summer School!
 - [Plotting with Python](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-plotting.ipynb)
 - [Conditionals](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-conditionals.ipynb)
 - [Functions in Python](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-functions.ipynb)
+- [Symbolic algebra](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-sympy.ipynb)
+- [Numerically solving algebraic equations](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-solver.ipynb)
+- [Error handling](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-exceptions.ipynb)
