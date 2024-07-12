@@ -13,14 +13,15 @@
 
 <link rel="stylesheet" href="../../reveal.js/dist/theme/black.css" id="theme"/>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
 
 <section>
-<section id="slide-org57da5d0" data-background="../figures/bitmap/11-052-9-Version2.jpg" data-background-size="100%">
-<h2 id="org57da5d0"></h2>
+<section id="slide-org0d497b4" data-background="../figures/bitmap/11-052-9-Version2.jpg" data-background-size="100%">
+<h2 id="org0d497b4"></h2>
 <h1 style="background-color:rgba(1, 1, 1, 0.5)">
 Statistical Mechanics 2
 </h1>
@@ -47,15 +48,1111 @@ University of Strathclyde
 </section>
 </section>
 <section>
-<section id="slide-org9fba850">
-<h2 id="org9fba850">Introduction</h2>
+<section id="slide-org25cd75d">
+<h2 id="org25cd75d">Overview</h2>
+
 
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org4a008cf">
-<h2 id="org4a008cf">Questions?</h2>
+<section id="slide-orgb00f926">
+<h2 id="orgb00f926">Phase space</h2>
+<object type="image/svg+xml" data="../figures/vector/phasespace.svg" width="100%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
+    Your browser does not support SVG
+</object>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org74b5f80">
+<h2 id="org74b5f80">Basic concepts</h2>
+<p>
+    <b>Ergodic hypothesis: </b> A system with fixed $N$, $V$, and $E$ ($U$) is equally likely to be found in any of its $\Omega(N,V,E)$ microscopic states.<br/>
+</p>
+<p class="fragment">
+    Consider two subsets of states, $\Omega_A$ and $\Omega_B$. A system is more likely to be found in set A if $\Omega_A&gt;\Omega_B$.
+</p>
+<p class="fragment">
+    Therefore $S(\Omega_A)&gt;S(\Omega_B)$ as A is more likely, thus $S$ must be a monotonically increasing function in $\Omega$.<br/>
+</p>
+<p class="fragment">
+    As states increase multiplicatively, yet entropy is additive, the relationship must be logarithmic. 
+    \begin{equation*}
+    S(N,V,E) = k_B \ln \Omega(N,V,E)
+    \end{equation*}
+    where $k_B=1.3806503\times10^{-23}$ J K$^{-1}$ is the Boltzmann
+    constant, present for historic reasons.			    
+</p>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgce73212">
+<h2 id="orgce73212">Basic concepts</h2>
+<p>
+Consider one microscopic state, \(\boldsymbol{\Gamma}\) out of the
+\(\Omega(N,V,E)\) microscopic states. Its probability is:
+</p>
+<div>
+\begin{equation*}
+{\mathcal P}({\boldsymbol\Gamma}) \propto \frac{1}{\Omega(N,V,E)}
+\end{equation*}
+
+</div>
+
+<p>
+In the \(N\), \(V\), \(E\) ensemble, we can now determine average properties if
+the &lt;b&gt;density of states&lt;/b&gt;, \(\Omega(N,V,E)\) is known.
+</p>
+<div>
+\begin{align*}
+\langle{\mathcal A}\rangle
+&=
+\int {\rm d}{\boldsymbol\Gamma}\,{\mathcal P}({\boldsymbol\Gamma})\,
+{\mathcal A}({\boldsymbol\Gamma})
+= \lim_{t_{obs.}\to\infty} \frac{1}{t_{obs.}}\int_0^{t_{obs.}}\mathcal A(t)\,{\rm d}t
+\end{align*}
+
+</div>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org4152f69">
+<h2 id="org4152f69">Density of states</h2>
+<ul>
+<li>The density of states \(\Omega(N,V,E)\) is the number of ways the
+system can have an energy \(E\).  In other words, it is the "volume"
+of phase space with an energy \(E\).</li>
+
+<li><p>
+Volume element in phase space:
+</p>
+<div>
+\begin{equation*}
+d{\boldsymbol\Gamma} = \frac{1}{N!}
+\frac{d{\bf r}_1d{\bf p}_1}{h^3}\cdots \frac{d{\bf r}_N d{\bf p}_N}{h^3}
+\end{equation*}
+
+</div>
+<p>
+where \(h\) is Planck's constant.
+</p></li>
+
+<li><p>
+Mathematically, the density of states is given by
+</p>
+<div>
+\begin{equation*}
+\Omega(N,V,E) = \int_{E \lt  H({\boldsymbol\Gamma})\lt E+\delta E} d{\boldsymbol\Gamma} 
+\end{equation*}
+
+</div>
+<p>
+where \(\delta E\ll E\).
+</p></li>
+
+</ul>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgfca1043">
+<h2 id="orgfca1043">Microcanonical ensemble</h2>
+<p>
+<b>Fundamental equation of thermodynamics:</b>
+</p>
+<div>
+\begin{align*}
+{\rm d}S(N,V,E) &= \frac{{\rm d}E}{T} + \frac{p}{T}{\rm d}V - \frac{\mu}{T}{\rm d}N
+\end{align*}
+
+</div>
+
+<p>
+From \(S(N,V,E) = k_B \ln \Omega(N,V,E)\):
+</p>
+<div>
+\begin{align*}
+{\rm d}\ln\Omega(N,V,E) &= \beta\,{\rm d}E + \beta\,p\,{\rm d} V - \beta\,\mu\,{\rm d}N
+\end{align*}
+
+</div>
+<p>
+where \(\beta=1/(k_B\,T)\).
+</p>
+
+
+<blockquote>
+Once the density of states $\Omega(N,V,E)$ is known, all the
+thermodynamic properties of the system can be determined.
+</blockquote>
+<br>
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgc103cd3">
+<h2 id="orgc103cd3">Free energies in other ensembles</h2>
+<p>
+The microcanonical ensemble (\(N\), \(V\), \(E\)) is very useful
+for molecular dynamics; however, other ensembles such as
+(\(N\), \(V\), \(T\)) are more accessible in experiments.
+&lt;br/&gt;
+</p>
+
+<p>
+Helmholtz free energy: \(A=U-TS\)
+</p>
+<div>
+\begin{align*}
+{\rm d}A &\le -S\,{\rm d}T - p\,{\rm d}V + \mu\,{\rm d}N
+\end{align*}
+
+</div>
+<p>
+Reversible transformations:
+</p>
+<div>
+\begin{align*}
+{\rm d}A &= -S\,{\rm d}T - p\,{\rm d}V + \mu\,{\rm d}N
+\end{align*}
+
+</div>
+<p>
+State functions are exact differentials, thus:
+</p>
+<div>
+\begin{equation*}
+A(T,V,N)
+\end{equation*}
+
+</div>
+<p>
+Lets consider the probabilities of the (\(N\), \(V\), \(T\)) ensemble&#x2026;
+</p>
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org82a7d4f">
+<h2 id="org82a7d4f">Canonical ensemble</h2>
+<object type="image/svg+xml" data="../figures/vector/canonical_ensemble.svg" width="50%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
+    Your browser does not support SVG
+</object>
+
+<div>
+\begin{equation*}
+{\mathcal P}(E) \propto \Omega(E;E_{\rm tot})
+\qquad \qquad
+\Omega(E;E_{\rm tot}) = \Omega(E)  \Omega_{\rm surr.} (E_{\rm tot}-E)
+\end{equation*}
+
+</div>
+
+<p>
+(Note: the \(N\) and \(V\) variables for the system and the surroundings are implicit)
+</p>
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org41a2d01">
+<h2 id="org41a2d01">Canonical ensemble</h2>
+<div>
+\begin{align*}
+{\mathcal P}(E,E_{\rm tot})
+&\propto
+\Omega(E) \Omega_{\rm surr}(E_{\rm tot}-E)
+\\
+&\propto
+\Omega(E) e^{\ln \Omega_{surr}(E_{\rm tot}-E)}
+\end{align*}
+
+</div>
+
+<p class="fragment">
+Performing a Taylor expansion of
+$\ln\Omega_{\rm surr}$ around $E_{\rm tot}$.
+    
+\begin{align*}
+{\mathcal P}(E,E_{\rm tot}) &\propto \Omega(E) e^{\ln
+\Omega_B(E_{\rm tot}) - E
+\frac{\partial}{\partial E_{\rm tot}}\ln
+\Omega_B(E_{\rm tot}) + \cdots}
+\end{align*}
+</p>
+
+<p class="fragment">
+First-order is fine as $E\ll E_{tot}$. Note that $\partial \ln \Omega(E) / \partial E=\beta$. <br/>At equilibrium the surroundings and system have the same temperature thus:
+
+\begin{align*}
+{\mathcal P}(E,E_{\rm tot}) &\propto \Omega(E) e^{\ln \Omega_B(E_{\rm
+tot}) - \beta E} \end{align*}
+\begin{align*} {\mathcal P}(E) &\propto
+\Omega(E) e^{- \beta E} \end{align*}
+
+(If the surroundings are large, $E_{\rm tot}$ is unimportant and the constant term $\ln \Omega_B(E_{\rm tot})$ cancels on normalisation)
+</p>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org2838c63">
+<h2 id="org2838c63">Canonical ensemble</h2>
+<ul>
+<li><p>
+Boltzmann distribution
+</p>
+<div>
+\begin{equation*}
+{\mathcal P}(E) = \frac{\Omega(N, V, E)}{Q(N,V,\beta)} e^{ - \beta\,E}
+\end{equation*}
+
+</div></li>
+
+<li><p>
+partition function is the normalisation:
+</p>
+<div>
+\begin{equation*}
+Q(N,V,\beta) = \int {\rm d}E\,\Omega(N,V,E) e^{-\beta\,E}
+\end{equation*}
+
+</div></li>
+
+<li><p>
+free energy
+</p>
+<div>
+\begin{align*}
+A &= -k_B\,T \ln Q(N,V,\beta) 
+\\
+{\rm d}A &= -S\,{\rm d}T -p\,{\rm d}V + \mu\,{\rm d}N
+\\
+{\rm d}\ln Q(N,\,V,\,\beta) &= - E\,{\rm d}\beta + \beta\,p\,{\rm d}V - \beta\,\mu\,{\rm d}N
+\end{align*}
+
+</div>
+<p>
+Again, all thermodynamic properties can be derived from \(Q(N,\,V,\,\beta)\).
+</p></li>
+
+</ul>
+
+<aside class="notes">
+nil
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org50a397b">
+<h2 id="org50a397b">Helmholtz free energy</h2>
+<div>
+\begin{align*}
+\beta A(N,V,T) &= - \ln Q(N,V,\beta)
+\end{align*}
+
+</div>
+
+<aside class="notes">
+nil
+</aside>
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgbbe35d0">
+<h2 id="orgbbe35d0">Partition function: density of states</h2>
+<div>
+\begin{align*}
+Q(N,V,\beta)
+&=
+\sum_{E} \Omega(N,V,E)\,e^{-\beta E}
+\end{align*}
+
+</div>
+
+<p>
+The canonical partition function can be written in terms of an
+integral over phase space coordinates:
+</p>
+<div>
+\begin{align*}
+Q(N,V,\beta) &= \int dE \Omega(N,V,E) e^{-\beta E}
+\\
+&= \int dE e^{-\beta E}
+\int_{E \lt  H({\boldsymbol\Gamma})\lt E+\delta E} d{\boldsymbol\Gamma} 
+\\
+&= \int d{\boldsymbol\Gamma}\, e^{-\beta H({\Gamma})}
+\\
+&= \frac{1}{N!}\int \frac{d{\bf r}_1d{\bf p}_1}{h^3}
+\cdots \frac{d{\bf r}_N d{\bf p}_N}{h^3}
+e^{-\beta H({\Gamma})}
+\end{align*}
+
+</div>
+
+
+<aside class="notes">
+<p>
+The normalization constant which we defined in
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgc70854e">
+<h2 id="orgc70854e">Factorization of the partition function</h2>
+<ul>
+<li><p>
+The partition function can be factorized
+</p>
+<div>
+\begin{align*}
+Q(N,V,T) = \frac{1}{N!}
+\int d{\bf r}_1\cdots d{\bf r}_N 
+e^{-\beta U({\bf r}_1,\dots{\bf r}_N)}
+\int \frac{d{\bf p}_1}{h^3}\cdots\frac{d{\bf p}_N}{h^3}
+e^{-\beta K({\bf p}_1,\dots,{\bf p}_N)}
+\end{align*}
+
+</div></li>
+
+<li><p>
+The integrals over the momenta can be performed exactly
+</p>
+<div>
+\begin{align*}
+\int\frac{{\rm d}{\bf p}_1}{h^3}\cdots\frac{{\rm d}{\bf p}_N}{h^3}
+e^{-\beta K({\bf p}_1,\dots,{\bf p}_N)}
+&= \left[\int\frac{{\rm d}{\bf p}}{h^3} e^{-\frac{\beta\,p^2}{2\,m}} \right]^{N}
+\\
+&= \left(\frac{2\,\pi\,m}{\beta h^2}\right)^{3\,N/2}
+= \Lambda^{-3\,N}
+\end{align*}
+
+</div></li>
+
+<li><p>
+The partition function is given in terms of a configurational
+integral and the de Broglie wavelength \(\Lambda\)
+</p>
+<div>
+\begin{equation*}
+Q(N,\,V,\,T) = \frac{1}{N!\Lambda^{3\,N}}
+\int {\rm d}{\bf r}_1\cdots {\rm d}{\bf r}_N 
+e^{-\beta\,U({\bf r}_1,\dots{\bf r}_N)}
+= \frac{Z(N,\,V,\,T)}{N!\Lambda^{3\,N}}
+\end{equation*}
+
+</div></li>
+
+</ul>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgac8ec52">
+<h2 id="orgac8ec52">Average properties</h2>
+<ul>
+<li><p>
+The probability of being at the phase point \({\boldsymbol\Gamma}\) is
+</p>
+<div>
+\begin{equation*}
+{\mathcal P}({\boldsymbol\Gamma})
+= \frac{e^{-\beta\,H({\boldsymbol\Gamma})}}{Q(N,\,V,\,\beta)}
+\end{equation*}
+
+</div></li>
+
+<li><p>
+The average value of a property \({\mathcal A}({\boldsymbol\Gamma})\) is
+</p>
+<div>
+\begin{align*}
+\langle{\mathcal A}\rangle &= \int {\rm d}{\boldsymbol\Gamma} {\mathcal P}({\boldsymbol\Gamma})
+{\mathcal A}({\boldsymbol\Gamma})
+\\
+&= \frac{1}{Q(N,\,V,\,\beta)}\int {\rm d}{\boldsymbol\Gamma} e^{-\beta H({\boldsymbol\Gamma})}
+{\mathcal A}({\boldsymbol\Gamma})
+\end{align*}
+
+</div></li>
+
+<li><p>
+If the property depends only on the position of the particles
+</p>
+<div>
+\begin{align*}
+\langle{\mathcal A}\rangle &= \frac{1}{Q(N,V,\beta)}
+\int d{\bf r}_1\cdots d{\bf r}_N e^{-\beta U({\bf r}_1,\dots,{\bf r}_N)}
+{\mathcal A}({\bf r}_1,\dots,{\bf r}_N)
+\end{align*}
+
+</div></li>
+
+</ul>
+
+
+<aside class="notes">
+nil
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org45d08df">
+<h2 id="org45d08df">Fluctuations</h2>
+<div>
+\begin{align*}
+\langle E^2\rangle
+&=
+\sum_E E^2 P(E)
+\end{align*}
+
+</div>
+
+<aside class="notes">
+<p>
+The partition function tells us everything we need to know about the
+statistics of the system.
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org78c9ef4">
+<h2 id="org78c9ef4">Boltzmann distribution</h2>
+<div>
+\begin{align*}
+P(E)
+\propto
+e^{-\beta E}
+\end{align*}
+
+</div>
+
+<aside class="notes">
+nil
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org878d50f">
+<h2 id="org878d50f">example: Barometric formula</h2>
+<p>
+Ideal gas at temperature \(T\) in a gravitational field.
+</p>
+
+<p>
+Potential energy of gas molecule of mass \(m\) at height \(h\) is
+</p>
+<div>
+\begin{equation*}
+E(h) = mgh
+\end{equation*}
+
+</div>
+
+<p>
+Probability \({\mathcal P}(h)\) that a molecule is at height \(h\)
+</p>
+<div>
+\begin{equation*}
+{\mathcal P}(h) \propto e^{-\beta E(h)} =  e^{-\beta mgh}
+\end{equation*}
+
+</div>
+
+<p>
+Concentration and pressure profile:
+</p>
+<div>
+\begin{align*}
+c(h) &= c_0 e^{-\beta m g h}
+\\
+p(h) &= p_0 e^{-\beta m g h}
+\end{align*}
+
+</div>
+<p>
+where \(c_0\) is the concentration at \(h=0\), and \(p_0\) is the pressure.
+</p>
+
+
+<aside class="notes">
+<p>
+For our first application of the Boltzmann distribution, let's
+consider the variation of gas in the atmosphere.  
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orga940d7a">
+<h2 id="orga940d7a">example: Maxwell-Boltzmann velocity distribution</h2>
+<ul>
+<li><p>
+Kinetic energy:
+</p>
+<div>
+\begin{equation*}
+E({\bf v}) = \frac{m}{2} v^2
+\end{equation*}
+
+</div>
+<p>
+where \(v^2=v_x^2+v_y^2+v_z^2\) is the particle speed.
+</p></li>
+
+<li><p>
+Velocity distribution:
+</p>
+<div>
+\begin{align*} 
+P({\bf v}) d{\bf v} &= (2\pi \beta m)^{-3/2} e^{-\beta m v^2/2} d{\bf v}
+\\
+&= (2\pi \beta m)^{-3/2} e^{-\beta m v_x^2/2-\beta m v_y^2/2-\beta m v_z^2/2} 
+  dv_x dv_y dv_z
+\\
+&= f(v_x) dv_x  f(v_y) dv_y  f(v_z) dv_z
+\end{align*}
+
+</div></li>
+
+</ul>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org9726f2e">
+<h2 id="org9726f2e">Maxwell-Boltzmann speed distribution</h2>
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org9744678">
+<h2 id="org9744678">Grand canonical ensemble</h2>
+<object type="image/svg+xml" data="../figures/vector/grandcanonical_ensemble.svg" width="50%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
+    Your browser does not support SVG
+</object>
+
+<div>
+\begin{align*}
+{\mathcal P}(N,E) &\propto \Omega(N,E;N_{\rm tot},E_{\rm tot})
+\\
+\Omega(N,E;N_{\rm tot},E_{\rm tot}) 
+&= \Omega(N,E) \Omega_B(N_{\rm tot}-N,E_{\rm tot}-E)
+\end{align*}
+
+</div>
+
+<aside class="notes">
+nil
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org76c0198">
+<h2 id="org76c0198">Grand canonical ensemble</h2>
+<ul>
+<li><p>
+Boltzmann distribution
+</p>
+<div>
+\begin{equation*}
+{\mathcal P}(E,N) = \frac{\Omega(N, V, E)}{Z_G(\mu,V,\beta)} 
+e^{\beta \mu N - \beta E}
+\end{equation*}
+
+</div></li>
+
+<li><p>
+partition function
+</p>
+<div>
+\begin{equation*}
+Z_G(\mu, V, \beta)
+= \sum_{N} \int {\rm d}E\,\Omega(N,V,E) e^{\beta\,\mu\,N - \beta\,E}
+\end{equation*}
+
+</div></li>
+
+<li><p>
+free energy  
+</p>
+<div>
+\begin{align*}
+\Omega &= - pV = -k_BT \ln Z_G(\mu,V,\beta) 
+\\
+d\Omega &= - d(pV) = -S dT - pdV - N d\mu
+\\
+d\ln Z_G(\mu, V, \beta) &= - E d\beta + \beta pdV + N d\beta\mu
+\end{align*}
+
+</div></li>
+
+</ul>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org8875e6f">
+<h2 id="org8875e6f">Isothermal-isobaric ensemble</h2>
+<ul>
+<li><p>
+Boltmann distribution
+</p>
+<div>
+\begin{align*}
+P(N,V,E)
+&=
+\frac{\Omega(N,V,E)}{\Delta(N,\beta p,\beta)}
+e^{\beta p V - \beta E}
+\end{align*}
+
+</div></li>
+
+<li><p>
+partition function
+</p>
+<div>
+\begin{align*}
+\Delta(N,\beta p,\beta)
+&=
+\sum_{V,E}
+\Omega(N,V,E)\,e^{\beta p V - \beta E}
+\end{align*}
+
+</div></li>
+
+<li><p>
+free energy
+</p>
+<div>
+\begin{align*}
+\beta G(N,p,T)
+&=
+- \ln\Delta(N,\beta p,\beta)
+\end{align*}
+
+</div>
+
+<div>
+\begin{align*}
+dG
+&=
+- SdT
++ Vdp
++ \mu dN
+\\
+d \ln\Delta(N,\beta p, \beta)
+&=
+- E d\beta
++ V d(\beta p)
++ \beta \mu dN
+\end{align*}
+
+</div></li>
+
+</ul>
+
+<aside class="notes">
+nil
+</aside>
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org9e1a7b6">
+<h2 id="org9e1a7b6">Simple fluids</h2>
+<ul>
+<li>\(N\) spherical atoms of mass \(m\)</li>
+<li>position of atom \(\alpha\) is \({\bf r}_\alpha\)</li>
+<li>momentum of atom \(\alpha\) is \({\bf p}_\alpha\)</li>
+<li>point in phase space: \({\boldsymbol\Gamma}=({\bf r}_1,\dots{\bf r}_N,{\bf p}_1,\dots,{\bf p}_N)\)</li>
+<li>pairwise additive potential \(u(|{\bf r}_\alpha-{\bf r}_{\alpha'}|)\)</li>
+<li><p>
+Hamiltonian: \(H({\boldsymbol\Gamma})=U({\bf r}_1,\dots{\bf r}_N)+K({\bf p}_1,\dots,{\bf p}_N)\)
+</p>
+
+<div>
+\begin{align*}
+U({\bf r}_1,\dots{\bf r}_N)
+&= \frac{1}{2} \sum_{\alpha\ne\alpha'} u(|{\bf r}_\alpha-{\bf r}_{\alpha'}|)
+\\
+K({\bf p}_1,\dots,{\bf p}_N)
+&= \sum_\alpha \frac{p_\alpha^2}{2m}
+\end{align*}
+
+</div></li>
+
+</ul>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org1a05b46">
+<h2 id="org1a05b46">phase space</h2>
+<object type="image/svg+xml" data="./statmech2/phasespace.svg" width="100%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
+    Your browser does not support SVG
+</object>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org08ec49d">
+<h2 id="org08ec49d">$n$-particle density</h2>
+<ul>
+<li><p>
+The $n$-particle density \(\rho^{(n)}({\bf r}_1,\dots,{\bf r}_n)\)
+is defined as \(N!/(N-n)!\) times the probability of finding \(n\)
+particles in the element \(d{\bf r}_1\cdots d{\bf r}_n\) of coordinate
+space.
+</p>
+<div>
+\begin{align*}
+&\rho^{(n)}({\bf r}_1,\dots,{\bf r}_n)
+= \frac{N!}{(N-n)!} \frac{1}{Z(N,V,T)}
+\int d{\bf r}_{n+1}\cdots d{\bf r}_N\, e^{-\beta U({\bf r}_1,\dots,{\bf r}_N)}
+\\
+&\int d{\bf r}_1\cdots d{\bf r}_n\,\rho^{(n)}({\bf r}_1,\dots,{\bf r}_n)
+= \frac{N!}{(N-n)!}
+\end{align*}
+
+</div></li>
+
+<li><p>
+This normalisation means that, for a homogeneous system,
+\(\rho^{(1)}({\bf r})=\rho=N/V\)
+</p>
+<div>
+\begin{align*}
+&\int d{\bf r}\, \rho^{(1)}({\bf r}) = N 
+\qquad \longrightarrow \qquad 
+\rho V = N
+\\
+&\int d{\bf r}_1d{\bf r}_2\, \rho^{(2)}({\bf r}_1,{\bf r}_2) = N(N-1) 
+\end{align*}
+
+</div></li>
+
+</ul>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org751bb4c">
+<h2 id="org751bb4c">$n$-particle correlation function</h2>
+<ul>
+<li><p>
+The $n$-particle distribution function \(g^{(n)}({\bf r}_1,\dots,{\bf r}_n)\) is defined as
+</p>
+<div>
+\begin{align*}
+g^{(n)}({\bf r}_1,\dots,{\bf r}_n) 
+&=\frac{\rho^{(n)}({\bf r}_1,\dots,{\bf r}_n)}
+{\prod_{k=1}^n \rho^{(1)}({\bf r}_i)}
+\\
+g^{(n)}({\bf r}_1,\dots,{\bf r}_n) 
+&= \rho^{-n} \rho^{(n)}({\bf r}_1,\dots,{\bf r}_n)
+\qquad \mbox{for a homogeneous system}
+\end{align*}
+
+</div></li>
+
+<li><p>
+For an ideal gas (i.e., \(U=0\)):
+</p>
+<div>
+\begin{align*}
+&\rho^{(n)}({\bf r}_1,\dots,{\bf r}_n)
+= \frac{N!}{(N-n)!} 
+\frac{\int d{\bf r}_{n+1}\cdots d{\bf r}_N}{\int d{\bf r}_{1}\cdots d{\bf r}_N}
+= \frac{N!}{(N-n)!} \frac{V^{N-n}}{V^N}
+\approx \rho^n
+\\
+&g^{(n)}({\bf r}_1,\dots,{\bf r}_n) \approx 1
+\\
+&g^{(2)}({\bf r}_1,{\bf r}_2) = 1 - \frac{1}{N}
+\end{align*}
+
+</div></li>
+
+</ul>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org4a8bfde">
+<h2 id="org4a8bfde">radial distribution function</h2>
+<ul>
+<li><p>
+\(n=2\): pair density and pair distribution function in a homogeneous fluid
+</p>
+<div>
+\begin{align*}
+g^{(2)}({\bf r}_1,{\bf r}_2) &= \rho^{-2} \rho^{(2)}({\bf r}_1,{\bf r}_2) 
+\\
+g^{(2)}({\bf 0},{\bf r}_2-{\bf r}_1) 
+&= \rho^{-2} \rho^{(2)}({\bf 0},{\bf r}_2-{\bf r}_1) 
+\end{align*}
+
+</div></li>
+
+<li><p>
+Average density of particles at r given that a tagged particle is at the origin is
+</p>
+<div>
+\begin{equation*}
+\rho^{-1} \rho^{(2)}({\bf 0},{\bf r}) 
+= \rho g^{(2)}({\bf 0},{\bf r})
+\end{equation*}
+
+</div></li>
+
+<li><p>
+The pair distribution function in a homogeneous and isotropic fluid
+is the radial distribution function \(g(r)\),
+</p>
+<div>
+\begin{equation*}
+g(r) = g^{(2)}({\bf r}_1,{\bf r}_2)
+\end{equation*}
+
+</div>
+<p>
+where \(r = |{\bf r}_1-{\bf r}_2|\)
+</p></li>
+
+</ul>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org6907658">
+<h2 id="org6907658">radial distribution function</h2>
+<img src="./statmech2/gofr1.png" width="40%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
+<img src="./statmech2/spheres.png" width="40%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org57c5d8f">
+<h2 id="org57c5d8f">radial distribution function</h2>
+<ul>
+<li><p>
+Energy 
+</p>
+<div>
+\begin{align*}
+U &= N \rho \int d{\bf r} u(r) g(r)
+\end{align*}
+
+</div></li>
+
+<li><p>
+virial equation
+</p>
+<div>
+\begin{align*}
+\\
+\frac{\beta p}{\rho} 
+&= 1 - \frac{\beta\rho}{6} \int d{\bf r} w(r) g(r)
+\end{align*}
+
+</div></li>
+
+<li><p>
+compressibility equation
+</p>
+<div>
+\begin{align*}
+\rho k_BT \kappa_T &= 1 + \rho \int d{\bf r} [g(r)-1]
+\end{align*}
+
+</div></li>
+
+</ul>
+
+<aside class="notes">
+nil
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgeef565b">
+<h2 id="orgeef565b">structure factor</h2>
+<ul>
+<li>Fourier component \(\hat{\rho}({\bf k})\) of the instantaneous single-particle density</li>
+
+</ul>
+
+<div>
+\begin{align*}
+\rho({\bf r}) &= \sum_\alpha \delta^d({\bf r}-{\bf r}_\alpha)
+= \int \frac{d{\bf k}}{(2\pi)^d} \hat{\rho}({\bf k}) e^{-i{\bf k}\cdot{\bf r}} 
+\\
+\hat{\rho}({\bf k}) &= \int d{\bf r} \rho({\bf r}) e^{i{\bf k}\cdot{\bf r}} 
+\end{align*}
+
+</div>
+
+<ul>
+<li>Autocorrelation function is called the structure factor \(S(k)\)</li>
+
+</ul>
+<div>
+\begin{align*}
+\frac{1}{N}\langle\hat{\rho}({\bf k})\hat{\rho}(-{\bf k})\rangle
+&= 1 + \frac{1}{N}\left\lt 
+\sum_{\alpha\ne\alpha'} e^{-i{\bf k}\cdot({\bf r}_\alpha-{\bf r}_{\alpha'})}
+\right\gt 
+\\
+S({\bf k}) &= 1 + \rho\int d{\bf r}[g({\bf r})-1] e^{-i{\bf k}\cdot{\bf r}}
+\end{align*}
+
+</div>
+
+<ul>
+<li>\(S({\bf k})\) reflects density fluctuations and dictates scattering</li>
+
+</ul>
+
+<aside class="notes">
+nil
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org9d6f813">
+<h2 id="org9d6f813">Fourier decomposition</h2>
+<p>
+Consider the function
+</p>
+<div>
+\begin{align*}
+f(x) &= x^2 + \frac{1}{2}\sin 6\pi x  + 0.1 \cos 28\pi x
+\end{align*}
+
+</div>
+<p>
+Fourier representation:
+</p>
+<div>
+\begin{align*}
+f(x) &= \sum_{n=0} A_n e^{-i k_n x}
+\end{align*}
+
+</div>
+<p>
+where \(k_n = 2\pi n\).
+</p>
+
+
+<aside class="notes">
+nil
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgb571ced">
+<h2 id="orgb571ced">Fourier decomposition</h2>
+<img src="./statmech2/decomposition.png" width="auto" height="80%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org3ad10e5">
+<h2 id="org3ad10e5">Structure factor</h2>
+<ul>
+<li>A peak at wavevector \(k\) signals density inhomogeneities on the
+length scale \(2\pi/k\)</li>
+
+</ul>
+
+<div style="text-align:center;">
+    <div style="width:16%;display:inline-block;">
+	<img src="./statmech2/homogeneous.png" width="100%" height="auto" style="margin:0;"><br/>
+	<img src="./statmech2/inhomogeneous.png" width="100%" height="auto" style="margin:0;">
+    </div>
+    <div style="width:28%;;display:inline-block;">
+	<img src="./statmech2/sofk.png" width="100%" height="auto" style="margin:0;">
+    </div>
+</div>
+
+<ul>
+<li>\(k=0\) limit is related to the isothermal compressibility \(\kappa_T\)</li>
+
+</ul>
+
+<div>
+\begin{align*}
+\hat{S}(0)
+&=
+1 + \rho \int d{\bf r}\,
+[g(r)-1]
+= \rho k_B T \kappa_T
+\end{align*}
+
+</div>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgb99cd89">
+<h2 id="orgb99cd89">Questions?</h2>
 <div class="slide-footer"></div>
 </section>
 </section>
