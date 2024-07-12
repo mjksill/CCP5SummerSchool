@@ -13,14 +13,15 @@
 
 <link rel="stylesheet" href="../../reveal.js/dist/theme/black.css" id="theme"/>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
 
 <section>
-<section id="slide-orgb694858" data-background="../figures/bitmap/11-052-9-Version2.jpg" data-background-size="100%">
-<h2 id="orgb694858"></h2>
+<section id="slide-org991b492" data-background="../figures/bitmap/11-052-9-Version2.jpg" data-background-size="100%">
+<h2 id="org991b492"></h2>
 <h1 style="background-color:rgba(1, 1, 1, 0.5)">
 Statistical Mechanics 1
 </h1>
@@ -42,6 +43,524 @@ University of Strathclyde
 </p>
 </h3>
 </div>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org5110162">
+<h2 id="org5110162">Introduction</h2>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgce9e176">
+<h2 id="orgce9e176">Statistical mechanics</h2>
+<div class="column" style="float:left; width:50%">
+
+<div id="org8e515d2" class="figure">
+<p><img src="../figures/bitmap/water.png" alt="water.png" height="500" />
+</p>
+</div>
+</div>
+
+<div class="column" style="float:right; width:50%">
+
+<div id="org842209e" class="figure">
+<p><img src="../figures/bitmap/liquidwater.png" alt="liquidwater.png" height="500" width="auto" />
+</p>
+</div>
+</div>
+
+<aside class="notes">
+<p>
+And so this is the kind of system mechanics is going to be one of the
+cornerstones of what you're going to learn in this module. So this
+kind of interesting question is, you know, so that you know that
+there's like 10 to the 23 you know in in a gram of water, around 10 or
+20, three kind of molecules of water. And if you think about all the
+different numbers, you have to specify to get the positions and
+velocities of every single particle. Every single water molecule in
+the system. You just think that you know there's too much
+information. How do you know that you have the same sort of bunch of
+water than someone else, right? But what's kind of interesting is that
+if you think of water from thermodynamics, how many different
+parameters you need to specify in order to kind of make sure that you
+have the same water in the same state as someone else. And the answer
+is like 2 right? You need to know like temperature and pressure or
+temperature and density.
+</p>
+
+<p>
+So how did you actually reduce something that actually is is 10 to the
+23 degrees of freedom.  Down to something with just two degrees of
+freedom.
+</p>
+
+<p>
+Alright, and what's sort of interesting is that that's kind of related
+to, well, this. This sort of how everything kind of reduces to
+Gaussian Statistics.
+</p>
+
+<p>
+It's also kind of interesting in terms of like when you get huge
+numbers of multiple when you have huge numbers of events.  Actually,
+things are much more predictable than if you just have single events,
+right? So that's why sort of when you're gambling in a casino.  You
+know whether you win or lose in a particular day or whatever, is
+actually very difficult to kind of predict, right?
+</p>
+
+<p>
+But the casino always wins 'cause they know very precisely. Given that
+you know 1000 people gamble everyday or 10,000 people gamble or
+there's 10,000 kind of games going on. They can tell you pretty
+precisely how many people are gonna win and how many people going to
+lose and what the distribution of that's going to be.
+</p>
+
+<p>
+And so even though the individual events may be very difficult to. To
+determine The actual statistics of them are actually quite
+reproducible, and you can actually do a lot to kind of model
+that. Yep, next slide, thanks.
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org3857cf8" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
+<h2 id="org3857cf8">Statistical mechanics</h2>
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org5d06b98" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
+<h2 id="org5d06b98">Statistical mechanics</h2>
+
+<p class="backbox" style="background:rgba(0, 0, 0, 0.5)">
+<em>
+  Ludwig Boltzmann, who spent much of his life studying statistical mechanics, died in 1906, by his own hand. Paul Ehrenfest, carrying on the work, died similarly in 1933. Now it is our turn to study statistical mechanics. Perhaps it will be wise to approach the subject cautiously.
+</em>
+<p class="backbox" style="background:rgba(0, 0, 0, 0.5);float:right">
+(Opening lines of "States of Matter", by D.L. Goodstein).
+</p>
+</p>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org015aead">
+<h2 id="org015aead">First law of thermodynamics</h2>
+<blockquote>
+<b>First law of thermodynamics:</b>
+Energy cannot be created or destroyed, but it can transform from one
+form to another.
+</blockquote>
+
+<br>
+
+<div>
+\begin{align*}
+d(E + {\rm KE} + {\rm PE})
+&= \delta Q - \delta W 
+\end{align*}
+
+</div>
+
+<ul>
+<li>What do we mean by energy?</li>
+<li>Heat</li>
+<li>Work
+<ul>
+<li>pressure: \(-pdV\)</li>
+<li>interfacial tension: \(-\sigma dA\)</li>
+<li>chemical potential: \(\mu_\alpha dN_\alpha\)</li>
+<li>\(\delta W'\)</li>
+
+</ul></li>
+
+</ul>
+
+<aside class="notes">
+<p>
+The first law of thermodynamics guarantees that energy is conserved.
+</p>
+
+<p>
+Energy can take on many different forms, and these forms can be
+converted to one another; however, energy can neither be created or
+destroyed.
+</p>
+
+<p>
+So the statement that we need to because about energy use does not
+really make sense.  However, we know that there is something to that
+statement that rings true.  We do not live in a world with
+inexhaustible resources.
+</p>
+
+<p>
+So the question is what is the real problem?
+</p>
+
+<p>
+What is a renewable resource?
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orge767c2f">
+<h2 id="orge767c2f">Second law of thermodynamics</h2>
+<blockquote>
+<b>Clausius statement:</b>
+No process is possible whose sole result is the transfer of heat from
+a body of lower temperature to a body of higher temperature.
+</blockquote>
+<blockquote>
+<b>Kelvin-Planck statement:</b>
+No process is possible in which the sole result is the absorption of
+heat from a reservoir and its complete conversion into work.
+</blockquote>
+<br>
+
+<div>
+\begin{align*}
+dS \ge \frac{\delta Q}{T}
+\end{align*}
+
+</div>
+
+<img src="https://aatishb.com/entropy/media/onewaytotwoway.gif" width=800>
+
+
+<aside class="notes">
+<p>
+The second law of thermodynamics is interesting in that it is one of
+the few laws of physics that is not reversible.  Most physical
+dynamical equations, such as Newton's laws of motion or even the
+Schrodinger equation, are the same moving forward and backward in
+time.  This is not the case for the second law of thermodynamics,
+which does show a difference.
+</p>
+
+<p>
+While different forms of energy can be converted to each other, some
+</p>
+
+<p>
+In this sense, not all forms of energy have equal "value".
+</p>
+
+<p>
+This provides an
+</p>
+
+
+<p>
+While different forms of energy can be converted to each other, some
+forms of energy
+</p>
+
+<p>
+In this sense, not all forms of energy have equal "value".
+</p>
+
+<p>
+This provides an
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orga1fb5ea">
+<h2 id="orga1fb5ea">Combined first and second laws</h2>
+<ul>
+<li><p>
+first law
+</p>
+
+<div>
+\begin{align*}
+dE &\le TdS - pdV - \delta W' + \sum_\alpha \mu_\alpha dN_\alpha
+\end{align*}  
+
+</div></li>
+
+<li><p>
+second law  
+</p>
+
+<div>
+\begin{align*}
+dS \le \frac{\delta Q}{T} \qquad\to\qquad \delta Q \le T dS 
+\end{align*}
+
+</div></li>
+
+<li><p>
+combined first and second laws
+</p>
+
+<div>
+\begin{align*}
+dE &\le TdS - pdV - \delta W' + \sum_\alpha \mu_\alpha dN_\alpha
+\end{align*}
+
+</div></li>
+
+</ul>
+
+
+<div>
+\begin{align*}
+\delta W'  &\le - dE + TdS - pdV + \sum_\alpha \mu_\alpha dN_\alpha
+\end{align*}
+
+</div>
+
+
+<aside class="notes">
+<p>
+Combining the first and second laws of thermodynamics, we arrive at
+this inequality.
+</p>
+
+<p>
+Work is a form of energy that can be perfectly converted to any other
+form of energy.
+</p>
+
+
+<p>
+We see that every 
+</p>
+
+
+<p>
+From this expression, we see that the energy of the system
+can be con
+</p>
+
+<p>
+Work is a form of energy that can be perfectly converted to any other
+form of energy.  
+</p>
+
+<p>
+The difficulty with using this inequality
+</p>
+
+</aside>
+
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org7fdc28c">
+<h2 id="org7fdc28c">Fundamental equation of thermodynamics</h2>
+<div>
+\begin{align*}
+dE &\le TdS - pdV - \delta W' + \sum_\alpha \mu_\alpha dN_\alpha
+\end{align*}
+
+</div>
+
+<aside class="notes">
+<p>
+This tells
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org9224f56">
+<h2 id="org9224f56">maximum entropy</h2>
+<div>
+\begin{equation*}
+dS = \frac{dE}{T} + \frac{p}{T}dV - \frac{\mu}{T}dN
+\end{equation*}
+
+</div>
+
+<aside class="notes">
+nil
+</aside>
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgc60766f">
+<h2 id="orgc60766f">Legendre transforms and free energies</h2>
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org3d41823">
+<h2 id="org3d41823">maximum work</h2>
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org6e4f57e">
+<h2 id="org6e4f57e">Calculus of thermodynamics</h2>
+<div>
+\begin{equation*}
+dS = \frac{dE}{T} + \frac{p}{T}dV - \frac{\mu}{T}dN
+\end{equation*}
+
+</div>
+
+<div>
+\begin{equation*}
+df
+=
+\left(\frac{\partial f}{\partial x}\right)_{y,z} dx
++ \left(\frac{\partial f}{\partial y}\right)_{x,z} dy
++ \left(\frac{\partial f}{\partial z}\right)_{x,y} dz
+\end{equation*}
+
+</div>
+
+<div>
+\begin{align*}
+\frac{\partial S}{\partial T}
+&= \frac{1}{T}
+\qquad
+\frac{\partial S}{\partial V}
+=
+\frac{p}{T}
+\qquad
+\frac{\partial S}{\partial N}
+=
+- \frac{\mu}{T}
+\end{align*}
+
+</div>
+
+
+
+<aside class="notes">
+<p>
+From the fundamental equation of thermodynamics, we can deduce
+relations between the various properties of the system.  To see this,
+let's consider a function \(f\) with independent variables \(x\) and \(y\).
+The differential of \(f\) (i.e.\ the total change in \(f\)) can be written
+as given here.
+</p>
+
+<p>
+The first term represents the change in \(f\) due to changes in the
+independent variable \(x\), and the second term representce changes due
+to the independent variable \(y\).  Note that this equation is just a
+generalization of a first order Taylor series expansion to a function
+of three variables.
+</p>
+
+</aside>
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org6b26eeb">
+<h2 id="org6b26eeb">Maxwell relations</h2>
+<div>
+\begin{align*}
+\frac{\partial}{\partial x}
+\frac{\partial f}{\partial y}
+&=
+\frac{\partial}{\partial y}
+\frac{\partial f}{\partial x}
+\end{align*}
+
+</div>
+
+<div>
+\begin{align*}
+\left[\frac{\partial}{\partial V}\left(\frac{1}{T}\right)\right]_{E,N}
+&=
+\left[\frac{\partial}{\partial E} \left(\frac{p}{T}\right)\right]_{V,N}
+\quad
+\left[\frac{\partial}{\partial N}\left(\frac{1}{T}\right)\right]_{E,V}
+=
+- \left[\frac{\partial}{\partial E} \left(\frac{\mu}{T}\right)\right]_{V,N}
+\quad
+\left[\frac{\partial}{\partial N} \left(\frac{p}{T}\right)\right]_{E,V}
+=
+- \left[\frac{\partial}{\partial V}\left(\frac{\mu}{T}\right)\right]_{V,N}
+\end{align*}
+
+</div>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org79f7166">
+<h2 id="org79f7166">Importance of free energy</h2>
+<ul>
+<li>Knowledge of the free energy of the system in terms of its "natural"
+variables, all equilibrium thermodynamics properties can be
+determined.</li>
+
+<li>The free energy represents the maximum work that can be extracted from a transformation
+if it is spontaneous or the minimum
+work required to perform a transformation if it is non-spontaneous.</li>
+
+</ul>
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgf2f7dab" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
+<h2 id="orgf2f7dab">Entropy</h2>
+<p class="backbox" style="background:rgba(0, 0, 0, 0.5)">
+  <img src="../figures/bitmap/Boltzmann_equation.jfif"><br/>
+<p>
+where \(W=\Omega\), and \(k.=k_B\).
+</p>
+</p>
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org6ef179b">
+<h2 id="org6ef179b">Microcanonical ensemble</h2>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgbb0f175">
+<h2 id="orgbb0f175">Questions?</h2>
 <div class="slide-footer"></div>
 </section>
 </section>
