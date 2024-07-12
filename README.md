@@ -19,4 +19,4 @@ Welcome to the CCP5 Summer School!
 - [Symbolic algebra](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-sympy.ipynb)
 - [Numerically solving algebraic equations](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-solver.ipynb)
 - [Error handling](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-exceptions.ipynb)
-- [Error handling](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-fileio.ipynb)
+- [File I/O](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-fileio.ipynb)
