@@ -1,0 +1,92 @@
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.inkscape.org/namespaces/inkscape" xmlns:ns2="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns3="http://www.w3.org/1999/xlink" xmlns:ns5="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" height="469.79538" id="svg9346" preserveAspectRatio="xMidYMid meet" version="1.1" viewBox="0 0 991.0921 469.79538" width="991.0921" ns2:docname="phasespace.svg" ns1:version="0.48.4 r9939">
+  <ns0:defs id="defs9348">
+    <ns0:marker id="StopL" orient="auto" refX="0" refY="0" style="overflow:visible" ns1:stockid="StopL">
+      <ns0:path d="M 0,5.65 0,-5.65" id="path4108" style="fill:none;stroke:#000000;stroke-width:1pt" transform="scale(0.8,0.8)" ns1:connector-curvature="0" />
+    </ns0:marker>
+    <ns0:marker id="Arrow2Send" orient="auto" refX="0" refY="0" style="overflow:visible" ns1:stockid="Arrow2Send">
+      <ns0:path d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" id="path3972" style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" transform="matrix(-0.3,0,0,-0.3,0.69,0)" ns1:connector-curvature="0" />
+    </ns0:marker>
+    <ns0:marker id="DistanceStart" orient="auto" refX="0" refY="0" style="overflow:visible" ns1:stockid="DistanceStart">
+      <ns0:g id="g2300">
+        <ns0:path d="M 0,0 2,0" id="path2306" style="fill:none;stroke:#ffffff;stroke-width:1.14999998;stroke-linecap:square" ns1:connector-curvature="0" />
+        <ns0:path d="M 0,0 13,4 9,0 13,-4 0,0 z" id="path2302" style="fill:#000000;fill-rule:evenodd;stroke:none" ns1:connector-curvature="0" />
+        <ns0:path d="M 0,-4 0,40" id="path2304" style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square" ns1:connector-curvature="0" />
+      </ns0:g>
+    </ns0:marker>
+    <ns1:path-effect effect="spiro" id="path-effect10614" is_visible="true" />
+    <ns0:linearGradient id="linearGradient10604">
+      <ns0:stop id="stop10606" offset="0" style="stop-color:#0000ff;stop-opacity:1;" />
+      <ns0:stop id="stop10608" offset="1" style="stop-color:#fdffff;stop-opacity:1;" />
+    </ns0:linearGradient>
+    <ns1:path-effect effect="spiro" id="path-effect10555" is_visible="true" />
+    <ns0:marker id="Arrow1Mend" orient="auto" refX="0" refY="0" style="overflow:visible" ns1:stockid="Arrow1Mend">
+      <ns0:path d="M 0,0 5,-5 -12.5,0 5,5 0,0 z" id="path3948" style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" transform="matrix(-0.4,0,0,-0.4,-4,0)" ns1:connector-curvature="0" />
+    </ns0:marker>
+    <ns0:marker id="Arrow1Lend" orient="auto" refX="0" refY="0" style="overflow:visible" ns1:stockid="Arrow1Lend">
+      <ns0:path d="M 0,0 5,-5 -12.5,0 5,5 0,0 z" id="path3942" style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" transform="matrix(-0.8,0,0,-0.8,-10,0)" ns1:connector-curvature="0" />
+    </ns0:marker>
+    <ns0:marker id="Arrow1Mend-1" orient="auto" refX="0" refY="0" style="overflow:visible" ns1:stockid="Arrow1Mend">
+      <ns0:path d="M 0,0 5,-5 -12.5,0 5,5 0,0 z" id="path3948-0" style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" transform="matrix(-0.4,0,0,-0.4,-4,0)" ns1:connector-curvature="0" />
+    </ns0:marker>
+    <ns0:marker id="Arrow1Mend-5" orient="auto" refX="0" refY="0" style="overflow:visible" ns1:stockid="Arrow1Mend">
+      <ns0:path d="M 0,0 5,-5 -12.5,0 5,5 0,0 z" id="path3948-6" style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" transform="matrix(-0.4,0,0,-0.4,-4,0)" ns1:connector-curvature="0" />
+    </ns0:marker>
+    <ns0:marker id="Arrow1Mend-7" orient="auto" refX="0" refY="0" style="overflow:visible" ns1:stockid="Arrow1Mend">
+      <ns0:path d="M 0,0 5,-5 -12.5,0 5,5 0,0 z" id="path3948-2" style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" transform="matrix(-0.4,0,0,-0.4,-4,0)" ns1:connector-curvature="0" />
+    </ns0:marker>
+    <ns0:marker id="Arrow1Mend-3" orient="auto" refX="0" refY="0" style="overflow:visible" ns1:stockid="Arrow1Mend">
+      <ns0:path d="M 0,0 5,-5 -12.5,0 5,5 0,0 z" id="path3948-8" style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" transform="matrix(-0.4,0,0,-0.4,-4,0)" ns1:connector-curvature="0" />
+    </ns0:marker>
+    <ns0:marker id="Arrow1Mend-57" orient="auto" refX="0" refY="0" style="overflow:visible" ns1:stockid="Arrow1Mend">
+      <ns0:path d="M 0,0 5,-5 -12.5,0 5,5 0,0 z" id="path3948-1" style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" transform="matrix(-0.4,0,0,-0.4,-4,0)" ns1:connector-curvature="0" />
+    </ns0:marker>
+    <ns0:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient10610" x1="680" x2="720" y1="432.36218" y2="392.36218" ns1:collect="always" ns3:href="#linearGradient10604" />
+    <ns0:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient10622" x1="680" x2="720" y1="412.36218" y2="412.36218" ns1:collect="always" ns3:href="#linearGradient10604" />
+    <ns0:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient11464" x1="680" x2="720" y1="432.36218" y2="392.36218" ns1:collect="always" ns3:href="#linearGradient10604" />
+    <ns0:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient11466" x1="680" x2="720" y1="412.36218" y2="412.36218" ns1:collect="always" ns3:href="#linearGradient10604" />
+  </ns0:defs>
+  <ns2:namedview bordercolor="#666666" borderopacity="1.0" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" id="base" pagecolor="#ffffff" showgrid="true" ns1:current-layer="layer1" ns1:cx="527.1221" ns1:cy="169.19721" ns1:document-units="px" ns1:pageopacity="0.0" ns1:pageshadow="2" ns1:snap-bbox="true" ns1:window-height="679" ns1:window-maximized="0" ns1:window-width="926" ns1:window-x="39" ns1:window-y="24" ns1:zoom="0.66171875">
+    <ns1:grid empspacing="5" enabled="true" id="grid9354" originx="152.1221px" originy="-552.49368px" snapvisiblegridlinesonly="true" type="xygrid" visible="true" />
+  </ns2:namedview>
+  <ns0:metadata id="metadata9351">
+    <rdf:RDF>
+      <ns5:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </ns5:Work>
+    </rdf:RDF>
+  </ns0:metadata>
+  <ns0:g id="layer1" transform="translate(152.1221,-30.07312)" ns1:groupmode="layer" ns1:label="Layer 1">
+    <ns0:text id="text10512" style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans" x="-154.46585" y="490.98792" ns2:linespacing="125%" xml:space="preserve"><ns0:tspan id="tspan10514" x="-154.46585" y="490.98792" ns2:role="line">2dN dimensional space</ns0:tspan></ns0:text>
+    <ns0:g id="g10557" transform="translate(19.104454,21.230841)">
+      <ns0:g id="g10516">
+        <ns0:path d="M 0,232.36218 0,52.362183" id="path9942" style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" ns1:connector-curvature="0" />
+        <ns0:path d="m 0.5,235.11218 180,0" id="path9942-2" style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" ns1:connector-curvature="0" />
+        <ns0:path d="M 2.388096,237.96101 144.79427,348.05404" id="path9942-4" style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" ns1:connector-curvature="0" />
+        <ns0:path d="M 1.5,234.86218 -148.5653,334.2624" id="path9942-8" style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" ns1:connector-curvature="0" />
+        <ns0:path d="M -1.66473,235.11672 -112.01034,92.906138" id="path9942-1" style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" ns1:connector-curvature="0" />
+        <ns0:text id="text10384" style="font-size:32px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold" x="152.87328" y="210.28406" ns2:linespacing="125%" xml:space="preserve"><ns0:tspan id="tspan10386" x="152.87328" y="210.28406" ns2:role="line">r<ns0:tspan id="tspan10388" style="font-size:65.00091553%;font-weight:normal;baseline-shift:sub;-inkscape-font-specification:Bitstream Vera Sans">1</ns0:tspan></ns0:tspan></ns0:text>
+        <ns0:text id="text10384-4" style="font-size:32px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold" x="17.3125" y="45.705933" ns2:linespacing="125%" xml:space="preserve"><ns0:tspan id="tspan10386-2" x="17.3125" y="45.705933" ns2:role="line">p<ns0:tspan id="tspan10388-6" style="font-size:65.00091553%;font-weight:normal;baseline-shift:sub;-inkscape-font-specification:Bitstream Vera Sans">1</ns0:tspan></ns0:tspan></ns0:text>
+        <ns0:path d="M 0.6117141,235.08989 129.1787,109.11158" id="path9942-1-4" style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" ns1:connector-curvature="0" />
+        <ns0:text id="text10384-4-5" style="font-size:32px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold" x="137.3125" y="105.70596" ns2:linespacing="125%" xml:space="preserve"><ns0:tspan id="tspan10386-2-6" x="137.3125" y="105.70596" ns2:role="line">p<ns0:tspan id="tspan10388-6-5" style="font-size:65.00091553%;font-weight:normal;baseline-shift:sub;-inkscape-font-specification:Bitstream Vera Sans">2</ns0:tspan></ns0:tspan></ns0:text>
+        <ns0:text id="text10384-4-4" style="font-size:32px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold" x="-162.6875" y="365.70596" ns2:linespacing="125%" xml:space="preserve"><ns0:tspan id="tspan10386-2-3" x="-162.6875" y="365.70596" ns2:role="line">p<ns0:tspan id="tspan10388-6-3" style="font-size:65.00091553%;font-weight:normal;baseline-shift:sub;-inkscape-font-specification:Bitstream Vera Sans">3</ns0:tspan></ns0:tspan></ns0:text>
+        <ns0:text id="text10384-5" style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans" x="152.87328" y="350.28406" ns2:linespacing="125%" xml:space="preserve"><ns0:tspan id="tspan10386-5" x="152.87328" y="350.28406" ns2:role="line"><ns0:tspan id="tspan10508" style="font-weight:bold;-inkscape-font-specification:Bitstream Vera Sans Bold">r</ns0:tspan><ns0:tspan id="tspan10510" style="font-size:65.00091553%;baseline-shift:sub">3</ns0:tspan></ns0:tspan></ns0:text>
+        <ns0:text id="text10384-9" style="font-size:32px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold" x="-147.12672" y="110.28406" ns2:linespacing="125%" xml:space="preserve"><ns0:tspan id="tspan10386-9" x="-147.12672" y="110.28406" ns2:role="line">r<ns0:tspan id="tspan10388-8" style="font-size:65.00091553%;font-weight:normal;baseline-shift:sub;-inkscape-font-specification:Bitstream Vera Sans">2</ns0:tspan></ns0:tspan></ns0:text>
+      </ns0:g>
+      <ns0:path d="m 5.6335232,314.73286 c 27.9332428,-3.06477 55.2227118,-11.88087 79.6694198,-25.7379 10.758829,-6.09839 21.324737,-13.53617 27.435187,-24.28815 3.05522,-5.37599 4.89077,-11.51697 4.7548,-17.69897 -0.13597,-6.18201 -2.3275,-12.38613 -6.49932,-16.9503 -2.71556,-2.97096 -6.20078,-5.19567 -9.96209,-6.62866 -3.761299,-1.43298 -7.794452,-2.08952 -11.818857,-2.16036 -8.048811,-0.14168 -15.954178,2.01768 -23.606652,4.51629 -7.652473,2.49862 -15.234065,5.36681 -23.169011,6.7233 -7.934946,1.35649 -16.401651,1.09761 -23.627567,-2.45057 -5.195162,-2.55101 -9.5622537,-6.76656 -12.2671664,-11.88328 -2.7049127,-5.11672 -3.7288654,-11.11003 -2.8449934,-16.82983 1.2321159,-7.97339 5.9964392,-15.00939 11.6543238,-20.76104 5.657884,-5.75164 12.265286,-10.46992 18.323505,-15.79824 6.05822,-5.32833 11.699001,-11.47316 14.616602,-18.99517 1.4588,-3.76101 2.199957,-7.8294 1.891442,-11.8516 -0.308515,-4.0222 -1.695236,-7.99288 -4.171823,-11.17718 -2.151802,-2.76671 -5.087787,-4.89285 -8.335788,-6.2102 -3.248,-1.31735 -6.799162,-1.8371 -10.299301,-1.65286 -7.000276,0.36849 -13.645257,3.5169 -19.1453108,7.86306 -6.2379614,4.92925 -11.1470012,11.35676 -15.282705,18.14688 -4.1357042,6.79011 -7.5537942,13.98659 -11.2748162,21.01252 -3.721021,7.02593 -7.784507,13.93797 -13.039006,19.90454 -5.254498,5.96657 -11.791104,10.98237 -19.340893,13.47443 -7.640091,2.52187 -16.14939,2.31805 -23.65998,-0.56671" id="path10553" style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" ns1:connector-curvature="0" ns1:original-d="m 5.6335232,314.73286 c -2.97423,-38.21015 53.7951698,-17.11315 79.6694198,-25.7379 11.85034,-3.95011 39.721787,-44.90631 25.690667,-58.93742 -15.364027,-15.36403 -76.820147,15.36403 -92.184177,0 C 11.398543,222.64664 7.5242532,208.99838 3.6972732,201.34443 -15.361437,163.227 63.972973,158.68449 46.011323,122.7612 c -1.15758,-2.31517 -33.95486,0 -37.7803998,0 -27.6122202,0 -34.9976502,64.55844 -58.9374202,72.53837 -5.09588,1.69862 -45.51669,4.17071 -23.65998,-0.56671" ns1:path-effect="#path-effect10555" />
+    </ns0:g>
+    <ns0:g id="g11452">
+      <ns0:g id="g11439" transform="translate(0,-2.2890625)">
+        <ns0:path d="m 542,52.862183 0.5,359.499997" id="path9356" style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" ns2:nodetypes="cc" ns1:connector-curvature="0" />
+        <ns0:path d="m 722,232.36218 -359.5,0.5" id="path9356-0" style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" ns2:nodetypes="cc" ns1:connector-curvature="0" />
+        <ns0:text id="text9913" style="font-size:32px;font-style:oblique;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Oblique" x="720.79688" y="212.36218" ns2:linespacing="125%" xml:space="preserve"><ns0:tspan id="tspan9915" x="720.79688" y="212.36218" ns2:role="line">x</ns0:tspan></ns0:text>
+        <ns0:text id="text9917" style="font-size:32px;font-style:oblique;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Oblique" x="501.15625" y="50.284058" ns2:linespacing="125%" xml:space="preserve"><ns0:tspan id="tspan9919" x="501.15625" y="50.284058" ns2:role="line">p</ns0:tspan></ns0:text>
+        <ns0:path d="m 660,232.36218 c 0,55.22848 -44.77153,100 -100,100 -55.22847,0 -100,-44.77152 -100,-100 0,-55.22847 44.77153,-100 100,-100 55.22847,0 100,44.77153 100,100 z" id="path9921" style="fill:none;stroke:#ff0000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" transform="translate(-17.75,0.24999888)" ns2:cx="560" ns2:cy="232.36218" ns2:rx="100" ns2:ry="100" ns2:type="arc" />
+      </ns0:g>
+      <ns0:path d="m 818.47002,331.32312 0,-220" id="path10612" style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)" ns1:connector-curvature="0" ns1:original-d="m 818.47002,331.32312 0,-220" ns1:path-effect="#path-effect10614" />
+      <ns0:path d="m 720,412.36218 c 0,11.0457 -8.95431,20 -20,20 -11.04569,0 -20,-8.9543 -20,-20 0,-11.04569 8.95431,-20 20,-20 11.04569,0 20,8.95431 20,20 z" id="path10586" style="fill:url(#linearGradient11464);fill-opacity:1;stroke:url(#linearGradient11466)" transform="matrix(0,-1,-1,0,1230.8322,921.32312)" ns2:cx="700" ns2:cy="412.36218" ns2:rx="20" ns2:ry="20" ns2:type="arc" />
+    </ns0:g>
+    <ns0:text id="text11448" style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans" x="434.6647" y="493.21225" ns2:linespacing="125%" xml:space="preserve"><ns0:tspan id="tspan11450" x="434.6647" y="493.21225" ns2:role="line">2 dimensional space</ns0:tspan></ns0:text>
+  </ns0:g>
+</ns0:svg>
