@@ -1,0 +1,32 @@
+.gridded_frame_with_columns {
+    display: flex;
+    flex-flow: row;
+}
+
+.gridded_frame_with_rows {
+    display: flex;
+    flex-flow: column;
+}
+
+.one_of_2_columns {
+    width: 50%;
+}
+
+.one_of_3_columns {
+    width: 33%;
+}
+
+.column_with_rows {
+    display: flex;
+    flex-grow: auto;
+    flex-flow: column;
+}
+
+.row_with_columns {
+    display: flex;
+    flex-flow: row;
+}
+
+.one_of_2_rows {
+    height: 50%;
+}
