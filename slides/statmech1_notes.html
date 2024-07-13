@@ -20,8 +20,8 @@
 <div class="slides">
 
 <section>
-<section id="slide-org991b492" data-background="../figures/bitmap/11-052-9-Version2.jpg" data-background-size="100%">
-<h2 id="org991b492"></h2>
+<section id="slide-org240c4ba" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
+<h2 id="org240c4ba"></h2>
 <h1 style="background-color:rgba(1, 1, 1, 0.5)">
 Statistical Mechanics 1
 </h1>
@@ -48,18 +48,27 @@ University of Strathclyde
 </section>
 </section>
 <section>
-<section id="slide-org5110162">
-<h2 id="org5110162">Introduction</h2>
+<section id="slide-org3c6fefa" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
+<h2 id="org3c6fefa">Statistical mechanics</h2>
+
+<p class="backbox" style="background:rgba(0, 0, 0, 0.5)">
+<em>
+  Ludwig Boltzmann, who spent much of his life studying statistical mechanics, died in 1906, by his own hand. Paul Ehrenfest, carrying on the work, died similarly in 1933. Now it is our turn to study statistical mechanics. Perhaps it will be wise to approach the subject cautiously.
+</em>
+<p class="backbox" style="background:rgba(0, 0, 0, 0.5);float:right">
+(Opening lines of "States of Matter", by D.L. Goodstein).
+</p>
+</p>
 
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgce9e176">
-<h2 id="orgce9e176">Statistical mechanics</h2>
+<section id="slide-org9d12d81">
+<h2 id="org9d12d81">Statistical mechanics</h2>
 <div class="column" style="float:left; width:50%">
 
-<div id="org8e515d2" class="figure">
+<div id="org908db9e" class="figure">
 <p><img src="../figures/bitmap/water.png" alt="water.png" height="500" />
 </p>
 </div>
@@ -67,7 +76,7 @@ University of Strathclyde
 
 <div class="column" style="float:right; width:50%">
 
-<div id="org842209e" class="figure">
+<div id="org261b59e" class="figure">
 <p><img src="../figures/bitmap/liquidwater.png" alt="liquidwater.png" height="500" width="auto" />
 </p>
 </div>
@@ -134,30 +143,42 @@ that. Yep, next slide, thanks.
 </section>
 </section>
 <section>
-<section id="slide-org3857cf8" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
-<h2 id="org3857cf8">Statistical mechanics</h2>
-<div class="slide-footer"></div>
-</section>
-</section>
-<section>
-<section id="slide-org5d06b98" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
-<h2 id="org5d06b98">Statistical mechanics</h2>
+<section id="slide-org9bf97e0">
+<h2 id="org9bf97e0">Overview</h2>
+<ul>
+<li>Thermodynamics</li>
+<li>Microscopic dynamics</li>
+<li>Statistical mechanics</li>
 
-<p class="backbox" style="background:rgba(0, 0, 0, 0.5)">
-<em>
-  Ludwig Boltzmann, who spent much of his life studying statistical mechanics, died in 1906, by his own hand. Paul Ehrenfest, carrying on the work, died similarly in 1933. Now it is our turn to study statistical mechanics. Perhaps it will be wise to approach the subject cautiously.
-</em>
-<p class="backbox" style="background:rgba(0, 0, 0, 0.5);float:right">
-(Opening lines of "States of Matter", by D.L. Goodstein).
-</p>
-</p>
+</ul>
 
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org015aead">
-<h2 id="org015aead">First law of thermodynamics</h2>
+<section id="slide-org89bde37">
+<h2 id="org89bde37">Basic concepts in thermodynamics</h2>
+<p>
+Thermodynamics is a phenomenological theory that describes the
+properties of systems, and their relationships, when in equilibrium.
+</p>
+
+<ul>
+<li>Properties:
+<ul>
+<li>state vs path</li>
+<li>intensive vs extensive</li>
+
+</ul></li>
+
+</ul>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org6baf25f">
+<h2 id="org6baf25f">First law of thermodynamics</h2>
 <blockquote>
 <b>First law of thermodynamics:</b>
 Energy cannot be created or destroyed, but it can transform from one
@@ -168,25 +189,40 @@ form to another.
 
 <div>
 \begin{align*}
-d(E + {\rm KE} + {\rm PE})
+d(E + {\rm KE} + {\rm PE} + \cdots)
 &= \delta Q - \delta W 
 \end{align*}
 
 </div>
 
 <ul>
-<li>What do we mean by energy?</li>
+<li>What do we mean by energy?
+<ul>
+<li>kinetic, internal, thermal, electromagnetic, gravitational, etc.</li>
+
+</ul></li>
 <li>Heat</li>
 <li>Work
 <ul>
 <li>pressure: \(-pdV\)</li>
 <li>interfacial tension: \(-\sigma dA\)</li>
 <li>chemical potential: \(\mu_\alpha dN_\alpha\)</li>
-<li>\(\delta W'\)</li>
+<li>\(\delta W'\): other</li>
 
 </ul></li>
 
 </ul>
+
+
+<div>
+\begin{align*}
+d(E + {\rm KE} + {\rm PE} + \cdots)
+&=
+\delta Q - pdV + \mu dN - \delta W'
+\end{align*}
+
+</div>
+
 
 <aside class="notes">
 <p>
@@ -200,8 +236,10 @@ destroyed.
 </p>
 
 <p>
-So the statement that we need to because about energy use does not
-really make sense.  However, we know that there is something to that
+So the statement that we need to
+conserve energy use to help the environment does not
+really make sense, 
+because about energy use   However, we know that there is something to that
 statement that rings true.  We do not live in a world with
 inexhaustible resources.
 </p>
@@ -220,8 +258,8 @@ What is a renewable resource?
 </section>
 </section>
 <section>
-<section id="slide-orge767c2f">
-<h2 id="orge767c2f">Second law of thermodynamics</h2>
+<section id="slide-org415a372">
+<h2 id="org415a372">Second law of thermodynamics</h2>
 <blockquote>
 <b>Clausius statement:</b>
 No process is possible whose sole result is the transfer of heat from
@@ -255,6 +293,12 @@ which does show a difference.
 </p>
 
 <p>
+If you accidentally view a film backward, you will immediately notice
+it because it will look "unusual".  This
+</p>
+
+
+<p>
 While different forms of energy can be converted to each other, some
 </p>
 
@@ -265,7 +309,6 @@ In this sense, not all forms of energy have equal "value".
 <p>
 This provides an
 </p>
-
 
 <p>
 While different forms of energy can be converted to each other, some
@@ -286,16 +329,15 @@ This provides an
 </section>
 </section>
 <section>
-<section id="slide-orga1fb5ea">
-<h2 id="orga1fb5ea">Combined first and second laws</h2>
+<section id="slide-org888ee27">
+<h2 id="org888ee27">Combined first and second laws</h2>
 <ul>
 <li><p>
 first law
 </p>
-
 <div>
 \begin{align*}
-dE &\le TdS - pdV - \delta W' + \sum_\alpha \mu_\alpha dN_\alpha
+dE &= \delta Q - pdV + \sum_\alpha \mu_\alpha dN_\alpha - \delta W'
 \end{align*}  
 
 </div></li>
@@ -303,10 +345,9 @@ dE &\le TdS - pdV - \delta W' + \sum_\alpha \mu_\alpha dN_\alpha
 <li><p>
 second law  
 </p>
-
 <div>
 \begin{align*}
-dS \le \frac{\delta Q}{T} \qquad\to\qquad \delta Q \le T dS 
+\delta Q \le T dS 
 \end{align*}
 
 </div></li>
@@ -314,23 +355,16 @@ dS \le \frac{\delta Q}{T} \qquad\to\qquad \delta Q \le T dS
 <li><p>
 combined first and second laws
 </p>
-
 <div>
 \begin{align*}
-dE &\le TdS - pdV - \delta W' + \sum_\alpha \mu_\alpha dN_\alpha
+dE &\le TdS - pdV + \sum_\alpha \mu_\alpha dN_\alpha - \delta W'
+\\
+\delta W'  &\le - dE + TdS - pdV + \sum_\alpha \mu_\alpha dN_\alpha
 \end{align*}
 
 </div></li>
 
 </ul>
-
-
-<div>
-\begin{align*}
-\delta W'  &\le - dE + TdS - pdV + \sum_\alpha \mu_\alpha dN_\alpha
-\end{align*}
-
-</div>
 
 
 <aside class="notes">
@@ -372,8 +406,8 @@ The difficulty with using this inequality
 </section>
 </section>
 <section>
-<section id="slide-org7fdc28c">
-<h2 id="org7fdc28c">Fundamental equation of thermodynamics</h2>
+<section id="slide-org16d57d0">
+<h2 id="org16d57d0">Fundamental equation of thermodynamics</h2>
 <div>
 \begin{align*}
 dE &\le TdS - pdV - \delta W' + \sum_\alpha \mu_\alpha dN_\alpha
@@ -392,8 +426,8 @@ This tells
 </section>
 </section>
 <section>
-<section id="slide-org9224f56">
-<h2 id="org9224f56">maximum entropy</h2>
+<section id="slide-orgdd0189a">
+<h2 id="orgdd0189a">maximum entropy</h2>
 <div>
 \begin{equation*}
 dS = \frac{dE}{T} + \frac{p}{T}dV - \frac{\mu}{T}dN
@@ -410,22 +444,22 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-orgc60766f">
-<h2 id="orgc60766f">Legendre transforms and free energies</h2>
+<section id="slide-org635ea23">
+<h2 id="org635ea23">Legendre transforms and free energies</h2>
 
 
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org3d41823">
-<h2 id="org3d41823">maximum work</h2>
+<section id="slide-orgfd25c0e">
+<h2 id="orgfd25c0e">maximum work</h2>
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org6e4f57e">
-<h2 id="org6e4f57e">Calculus of thermodynamics</h2>
+<section id="slide-org4dcb31d">
+<h2 id="org4dcb31d">Calculus of thermodynamics</h2>
 <div>
 \begin{equation*}
 dS = \frac{dE}{T} + \frac{p}{T}dV - \frac{\mu}{T}dN
@@ -486,8 +520,8 @@ of three variables.
 </section>
 </section>
 <section>
-<section id="slide-org6b26eeb">
-<h2 id="org6b26eeb">Maxwell relations</h2>
+<section id="slide-org0305c6e">
+<h2 id="org0305c6e">Maxwell relations</h2>
 <div>
 \begin{align*}
 \frac{\partial}{\partial x}
@@ -520,8 +554,8 @@ of three variables.
 </section>
 </section>
 <section>
-<section id="slide-org79f7166">
-<h2 id="org79f7166">Importance of free energy</h2>
+<section id="slide-org85ce79b">
+<h2 id="org85ce79b">Importance of free energy</h2>
 <ul>
 <li>Knowledge of the free energy of the system in terms of its "natural"
 variables, all equilibrium thermodynamics properties can be
@@ -538,13 +572,84 @@ work required to perform a transformation if it is non-spontaneous.</li>
 </section>
 </section>
 <section>
-<section id="slide-orgf2f7dab" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
-<h2 id="orgf2f7dab">Entropy</h2>
+<section id="slide-org1388ebe" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
+<h2 id="org1388ebe">Entropy</h2>
 <p class="backbox" style="background:rgba(0, 0, 0, 0.5)">
   <img src="../figures/bitmap/Boltzmann_equation.jfif"><br/>
+</p>
 <p>
 where \(W=\Omega\), and \(k.=k_B\).
 </p>
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgcf72462">
+<h2 id="orgcf72462">Entropy</h2>
+<ul>
+<li>The second law of thermodynamics, put simply, is that
+the most likely things will eventually happen and stay
+there.</li>
+
+<li>Richard Feynman says in his Lectures on Physics “…
+entropy is just the logarithm of the number of ways of
+internally arranging a system while &lt;loaded&gt;have it look the same
+from the outside&lt;/loaded&gt;”.&lt;/p&gt;</li>
+
+<li>Entropy is a measure of how much we don't know, i.e. it
+measures our lack of control-over/measurement-of the
+microstate.&lt;/p&gt;</li>
+
+<li>Entropy is NOT disorder/chaos, its just that there's so many
+ways to make a mess&#x2026;</li>
+
+<li>Sometimes order is more likely, i.e., look at any
+crystal transition.</li>
+
+</ul>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org6e5def4">
+<h2 id="org6e5def4">Microcanonical ensemble</h2>
+<p>
+We have derived the key relationships of the &lt;b&gt;micro-canonical ensemble&lt;/b&gt;,
+where the system is isolated (typically \(N,\,V,\,E\) held constant in molecular systems):
+</p>
+<div>
+\begin{align*}
+P(N,\,U, \ldots) &= \frac{\Omega\left(N, U, \ldots\right)}{\sum_U \Omega\left(N,\,U, \ldots\right)}
+&
+S(N,\,U, \ldots) &= k_B \ln \Omega\left(N, U, \ldots\right)
+\end{align*}
+
+</div>
+
+<p>
+Other thermodynamic properties can be generated from here, just like
+in normal thermodynamics
+</p>
+<div>
+\begin{align*}
+\left\langle U\right\rangle &= \sum_U U\,P(N,\,U, \ldots) &
+\mu &= - T\frac{\partial S(N,\,U, \ldots)}{\partial N}
+\end{align*}	      
+
+</div>
+
+<p>
+We do not have pressure or any other work variable in this system,
+we'd need to have some "volume" and "pressure" that somehow
+contributes to the dice roll for that.
+</p>
+
+<p>
+However, we do still have temperature, although it requires us to add
+the first law.
 </p>
 
 
@@ -552,15 +657,540 @@ where \(W=\Omega\), and \(k.=k_B\).
 </section>
 </section>
 <section>
-<section id="slide-org6ef179b">
-<h2 id="org6ef179b">Microcanonical ensemble</h2>
+<section id="slide-org3f8acbb">
+<h2 id="org3f8acbb">Averaging</h2>
+<p>
+&lt;p&gt;
+  &lt;em&gt;God does not play dice. &lt;span style="float:right;"&gt;A. Einstein&lt;/span&gt;&lt;/em&gt;
+&lt;/p&gt;
+&lt;p style="clear:right;" class="fragment"&gt;
+  &lt;em&gt;God does play dice with the universe. All the evidence points to him being an inveterate gambler, who throws the dice on every possible occasion. &lt;span style="float:right;"&gt;S. Hawking&lt;/span&gt;&lt;/em&gt;
+&lt;/p&gt;
+&lt;p class="fragment"&gt;
+  You are the omnipotent being of your simulation, so you get to choose:
+  &lt;span style="font-size:75%"&gt;
+</p>
+<div>
+\begin{align*}
+\langle{\mathcal A}\rangle &= \sum_{\boldsymbol\Gamma} d{\boldsymbol\Gamma}\,P({\boldsymbol\Gamma})\,
+{\mathcal A}({\boldsymbol\Gamma}) & \text{(Monte Carlo)}\\
+&\text{or}\\
+\langle{\mathcal A}\rangle&=\lim_{t_{obs.}\to\infty} \frac{1}{t_{obs.}}\int_0^{t_{obs.}}\mathcal A(t)\,{\rm d}t & \text{(Molecular Dynamics)}
+\end{align*}
+
+</div>
+<p>
+  &lt;/span&gt;
+&lt;/p&gt;	    
+&lt;p class="fragment"&gt;
+  &lt;b&gt;But are these equivalent? If so, the system is &lt;u&gt;Ergodic&lt;/u&gt;.&lt;/b&gt;
+&lt;/p&gt;
+</p>
 
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgbb0f175">
-<h2 id="orgbb0f175">Questions?</h2>
+<section id="slide-org2c86b0e">
+<h2 id="org2c86b0e">Dynamics of the simple harmonics oscillator</h2>
+<p>
+&lt;p&gt;
+  Consider the &lt;b&gt;S&lt;/b&gt;imple &lt;b&gt;H&lt;/b&gt;armonic &lt;b&gt;O&lt;/b&gt;scillator:
+  &lt;img src="img/SHO.gif"&gt;&lt;br/&gt;
+&lt;/p&gt;
+&lt;p class="fragment"&gt;
+  The &lt;b&gt;microstate&lt;/b&gt; variables, in this case position,
+  \(r\), and velocity, \(v=\dot{r}\), can be collected together to
+  form a vector, \(\boldsymbol \Gamma\), which exists in &lt;b&gt;phase space&lt;/b&gt;.&lt;/p&gt;
+&lt;div class="attribution backbox"&gt;
+  Image: 
+  &lt;i&gt;&lt;a href="<img src="https://en.wikipedia.org/wiki/Simple_harmonic_motion#/media/File:Simple_Harmonic_Motion_Orbit.gif" alt="File:Simple_Harmonic_Motion_Orbit.gif" />" title="User:XRay"&gt;Mazemaster - public domain&lt;/a&gt;
+  &lt;/i&gt;
+&lt;/div&gt;
+</p>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgfcad055">
+<h2 id="orgfcad055">simple harmonic oscillator</h2>
+<p>
+  The <b>microcanonical</b> SHO system visits all regions of phase space pretty quickly, it is therefore <b>Ergodic</b>. Stat-Mech
+  and (molecular) dynamics averages are equivalent.</p>
+<div class="backbox">
+  <div class="form-group">
+	<label for="shocount1">Ensemble members:&nbsp;</label><output id="shocount1output" for="shocount1">1</output>
+	<input type="range" class="form-control-range" id="shocount1" min="1" max="50" value="1" step="1">
+  </div>
+</div>
+<div id="shocount1div" style="margin:auto 0; display:inline-block;" ></div>
+<script>
+ (function() {
+   var state = {
+   };
+
+   function init(n) {
+	 state.n = n;
+	 state.dt = 0.015;
+	 state.x = [];
+	 state.y = [];
+	 state.tinit = [];
+	 state.A = [];
+	 state.t = 0;
+	 
+	 for (i = 0; i < state.n; i++) {
+	   state.tinit[i] = Math.random();
+	   state.A[i] = 1.0;
+	 };
+   };
+
+   function step() {
+	 state.t += state.dt;
+	 for (i = 0; i < state.n; i++) {
+	   var phase = 2 * 3.14159265 * (state.tinit[i] + state.t);
+	   state.x[i] = state.A[i] * Math.sin(phase);
+	   state.y[i] = state.A[i] * Math.cos(phase);
+	 };
+   };
+
+   init(1);
+   step();
+
+   $('#shocount1').on('input change', 
+			  (e) => {
+			    $('#shocount1output').text(e.target.value);
+			    init(e.target.valueAsNumber); 
+   });
+   
+   var animating = false;
+
+   function update () {
+	 step();
+
+	 Plotly.animate('shocount1div', {
+	   data: [{
+	     x: state.x, 
+	     y: state.y, 					
+	     marker: {
+	       color: [...Array(state.x.length).keys()],
+	       cmin: 0,
+	       cmax:state.x.length,
+	     },
+	   }],
+	 }, {
+	   transition: {
+	     duration: 0
+	   },
+	   frame: {
+	     duration: 0,
+	     redraw: false
+	   }
+	 });
+	 
+	 if (animating)
+	   requestAnimationFrame(update);
+	 else {
+	   Plotly.purge('shocount1div');
+	 }
+   }
+
+   Reveal.on( 'slidechanged', event => {
+	 if (event.currentSlide.id == 'shocount1slide') {
+	   Plotly.newPlot('shocount1div', 
+			    {
+			      data:	[{
+				x: state.x,
+				y: state.y,
+				marker: {
+				  color: [...Array(state.x.length).keys()],
+				  colorscale: 'Rainbow',
+				},
+			      mode: 'markers',
+			    }],
+			    layout:  { 
+			      xaxis: { title: 'r', range: [-1.5, 1.5]},
+			      yaxis: { title: 'v', range: [-1.5, 1.5]},
+			      plot_bgcolor: '#000',
+			      paper_bgcolor: '#000E',
+			      font: {
+				color: 'white',
+				size: 15,
+			      },
+			    },
+			    config: default_plot_Config,
+	   });
+	   Reveal.layout();
+	   animating = true;
+	   requestAnimationFrame(update);
+	 } else {
+	   animating = false;
+	 }
+   });
+ })();
+</script>
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org142ef46">
+<h2 id="org142ef46">Hamiltonian</h2>
+<p>
+&lt;p&gt;
+  Its not surprising that it forms a circle in phase space,
+  as the total energy (called the Hamiltonian), is the
+  equation of a circle in \(r\) and \(v\).
+</p>
+
+<div>
+\begin{align*}
+U = \mathcal{H}(\boldsymbol{\Gamma}) = \frac{1}{2}k\,r^2 + \frac{1}{2}m\,v^2
+\end{align*}
+
+</div>
+<p>
+  where \(k\) is the spring constant and \(m\) is the mass. 
+&lt;/p&gt;
+&lt;p class="fragment"&gt;
+  What is all of phase space like? We can sample all energies, \(U\), and plot the "flow" of trajectories:
+&lt;/p&gt;
+</p>
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgf259c6f">
+<h2 id="orgf259c6f">phase space "flow"</h2>
+<div style="display:flex">
+  <img src="img/SHOflow1.svg" style="flex:1" />
+  <div style="flex:1" >
+    <p style="padding-left:1em;">
+      The systems flow around phase space, the trajectory
+      lines do not cross, thus this behaves exactly as a
+      incompressible fluid.
+    </p>
+    <p class="fragment" style="padding-left:1em;">
+      Whatever <b>ensemble</b> of starting states we begin
+      with, there's a symmetry to its motion through phase
+      space. If evenly distributed, it will remain evenly
+      distributed.
+    </p>
+  </div>
+</div>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgf48e911">
+<h2 id="orgf48e911">Liouville's Theorem</h2>
+<p>
+We can treat an ensemble of systems flowing around phase
+space as an incompressible fluid with density
+\(\rho(\boldsymbol{\Gamma})\), thus it behaves as follows:
+</p>
+<div>
+\begin{align*}
+\nabla_{\boldsymbol{\Gamma}}
+\cdot [\dot{\boldsymbol\Gamma}\,\rho({\boldsymbol\Gamma})]
+=
+\sum_i \left(
+\dot{
+  \boldsymbol{r}}_i\cdot \frac{\partial}{\partial \boldsymbol{r}_i}
+  + \dot{\boldsymbol{v}}_i \cdot \frac{\partial}{\partial \boldsymbol{v}_i}
+\right)
+\rho\left(\left\{\boldsymbol{r}_i,\,\boldsymbol{v}_i\right\}^N_i\right)
+= 0
+\end{align*}
+
+</div>
+<p>
+which should be familiar to you as a simplification of
+the continuity equation from any fluid flow class you
+might have had:
+</p>
+<div>
+\begin{align*}
+\frac{\partial \rho}{\partial t}
++ \nabla \cdot [\rho\,\boldsymbol{v}] = 0
+\end{align*}
+
+</div>
+
+<p>
+This is the foundation of kinetic theory, as from here
+comes the BBGKY heirarchy and ultimately
+Boltzmann's/Enskog's equation.
+p&gt;
+</p>
+
+<p>
+Back to ergodicity.
+</p>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org2e66d29">
+<h2 id="org2e66d29">Double well potential</h2>
+<p>
+The SHO system has a parabolic potential energy:
+</p>
+<div>
+\begin{align*}
+U(\boldsymbol{\Gamma}) = \mathcal{H}(r,\,v) = \frac{1}{2}k\,r^2 + \frac{1}{2}m\,v^2
+\end{align*}
+
+</div>
+
+<p>
+We can make a double-well potential simply by shifting the spring rest
+position away from the origin:
+</p>
+<div>
+\begin{align*}
+U(\boldsymbol{\Gamma}) = \mathcal{H}(r,\,v) = \frac{1}{2}k\,\left(\left|r\right|-r_0\right)^2 + \frac{1}{2}m\,v^2
+\end{align*}
+
+</div>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgc2cc031">
+<h2 id="orgc2cc031">Double well potential</h2>
+<div class="backbox">	
+  <div class="row">
+	<div class="col">
+	  <div class="form-group">
+	    <label for="shocount2">Ensemble members: </label><output id="shocount2output" for="shocount2">1</output><br/>
+	    <input type="range" class="form-control-range" id="shocount2" min="1" max="500" value="200" step="1">
+	  </div>
+	</div>
+	<div class="col">
+	  <div class="form-group">
+	    <label for="shocount2dt">Time step: </label><output id="shocount2dtout" for="shocount2dt">1</output><br/>
+	    <input type="range" class="form-control-range" id="shocount2dt" min="0.005" max="0.4" value="0.1" step="0.005">
+	  </div>
+	</div>
+  </div>
+</div>
+<div id="shocount2div" style="margin:auto 0; display:inline-block;" ></div>
+<p>
+  Are the systems in the lower energies (closer to the centre of the
+  orbits) ergodic? No, they cannot visit each other even though they're
+  at the same energy level (thus at the same state)!
+</p>
+<script>
+ (function() {
+   var state = {
+	 x: [],
+	 y: []
+   };
+   var beta = 0; 
+   var omega = 1;
+   var gamma = 2 * beta;
+   var k = omega * omega + gamma * gamma / 4;
+   var m = 1
+   var r0 = 1;
+
+
+   function init() {
+	 state.n = $('#shocount2')[0].valueAsNumber;
+	 $('#shocount2output').text(state.n.toString());
+	 state.dt = $('#shocount2dt')[0].valueAsNumber;
+	 $('#shocount2dtout').text(state.dt.toString());
+	 
+	 if (state.n != state.x.length) {
+	   state.x = [];
+	   state.y = [];
+	   for (i = 0; i < state.n; i++) {
+	     state.x[i] = 3.0 * 2 * (Math.random() - 0.5);
+	     state.y[i] = 3.0 * (Math.random() - 0.5);
+	   };
+	 }
+   };
+
+   function accel(i) {
+	 var ri = state.x[i];
+	 var vi = state.y[i];
+	 return - k * (Math.abs(ri) / ri) * (Math.abs(ri) - r0);
+   }
+
+   function step() {
+	 for (i = 0; i < state.n; i++) {
+	   var ai  = accel(i);
+	   state.x[i] += state.dt * state.y[i] + 0.5 * ai * state.dt * state.dt;
+	   state.y[i] += 0.5 * state.dt * ai;
+	   var ai  = accel(i);
+	   state.y[i] += 0.5 * state.dt * ai;
+	 };
+   };
+
+   init();
+   step();
+
+   $('#shocount2').on('input change', 
+			  (e) => {
+			    init(); 
+   });
+
+   $('#shocount2dt').on('input change',
+			  (e) => {
+			    init(); 
+   });
+   
+   var animating = false;	       
+   function update () {
+	 step();
+
+	 Plotly.animate('shocount2div', {
+	   data: [{
+	     x: state.x, 
+	     y: state.y,
+	     marker: {
+	       color: [...Array(state.x.length).keys()],
+	       cmin: 0,
+	       cmax:state.x.length,
+	     },
+	   }],
+	 },{ 
+	   transition: {
+	     duration: 0
+	   },
+	   frame: {
+	     duration: 0,
+	     redraw: false
+	   }
+	 });
+
+	 if (animating)
+	   requestAnimationFrame(update);
+	 else {
+	   Plotly.purge('shocount2div')
+	 }
+   }
+
+   Reveal.on( 'slidechanged', event => {
+	 if (event.currentSlide.id == 'shocount2slide') {
+	   Plotly.newPlot('shocount2div', 
+			  {
+			    data:	[{
+			      x: state.x,
+			      y: state.y,
+			      mode: 'markers',
+			      marker: {
+				color: [...Array(state.x.length).keys()],
+				colorscale: 'Jet',
+				cmin: 0,
+				cmax:state.x.length,
+			      },
+			    }],
+			    layout:  { 
+			      xaxis: { title: 'r', range: [-4, 4]},
+			      yaxis: { title: 'v', range: [-4, 4]},
+			      plot_bgcolor: '#000',
+			      paper_bgcolor: '#000E',
+			      font: {
+				color: 'white',
+				size: 15,
+			      },
+			    },
+			    config: default_plot_Config,
+	   });
+	   Reveal.layout();
+	   
+	   animating = true;
+	   requestAnimationFrame(update);
+	 } else {
+	   animating = false;
+	 }
+   });	       
+ })();
+</script>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org8c9765a">
+<h2 id="org8c9765a">double-well dynamics</h2>
+<img src="img/SHOsplit.svg" style="width:100%" />
+
+<p>
+<b>Microstates</b> in \(U=0.25\) are energetically isolated from each other,
+thus its not ergodic; however, a lot of properties (i.e. average
+velocity) will still work out!
+</p>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orge03f1a7">
+<h2 id="orge03f1a7">Ergodicity</h2>
+<p>
+Phase space is so unbelievably big even for small
+systems it actually &amp;ldquo;feels&amp;rdquo; impossible for any
+trajectory to meaningfully visit all microstates (or come
+close enough to do so) in finite time.
+</p>
+
+<p>
+Practically, in simulation we typically just check averages are
+converging and hope we are "effectively" ergodic.  Like a lot of
+things in simulation, you presume it might be true but verify as best
+you can.
+</p>
+
+<p>
+There are many techniques for accelerating dynamics past energy
+barriers and "encourage" good sampling of phase space
+which you will learn about in your MC lectures.  These are also applied
+more frequently to MD simulations too.
+</p>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org4bed680">
+<h2 id="org4bed680">Statistical mechanics</h2>
+<p>
+The ideas of statistical mechanics are simple, yet the
+implications and relationships it provides are deep and
+meaningful.
+</p>
+
+<p>
+My dice example should make you believe that its
+applications are wider than just molecular
+systems. Isaac Asimov even explored the statistical
+mechanics of galactic societies in his excellent (but a little
+dated) <a href="https://en.wikipedia.org/wiki/Foundation_series">Foundation Series</a>.  Who
+knows where it will turn up next.
+</p>
+
+<p>
+While much of the derivations covered here are "ancient", there's
+still intense research into the field, and many more surprising
+results to find.
+</p>
+
+<p>
+I hope you're keen to find out more, and will look at the statistical
+mechanics underlying all your upcoming lectures as a mountain to climb
+up, rather than a chasm to fall in.
+</p>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org030d4d9">
+<h2 id="org030d4d9">Questions?</h2>
 <div class="slide-footer"></div>
 </section>
 </section>
