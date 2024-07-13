@@ -13,15 +13,17 @@
 
 <link rel="stylesheet" href="../../reveal.js/dist/theme/black.css" id="theme"/>
 
+<link rel="stylesheet" href="./grids.css"/>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
 
+
 <section>
-<section id="slide-org0d0dce7" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
-<h2 id="org0d0dce7"></h2>
+<section id="slide-orgf117e2f" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
+<h2 id="orgf117e2f"></h2>
 <h1 style="background-color:rgba(1, 1, 1, 0.5)">
 Statistical Mechanics 2
 </h1>
@@ -48,21 +50,16 @@ University of Strathclyde
 </section>
 </section>
 <section>
-<section id="slide-org5c6f7e5">
-<h2 id="org5c6f7e5">Review</h2>
+<section id="slide-orgd554ee0">
+<h2 id="orgd554ee0">Review</h2>
 <ul>
-<li><p>
-thermodynamics
-</p>
-
-<p>
-entropy: \(S(N,V,E)\)
-</p></li>
+<li>thermodynamics <br />
+entropy: \(S(N,V,E)\)</li>
 
 <li>microscopic dynamics <br />
-\(\Omega(N,V,E)\)</li>
+density of states: \(\Omega(N,V,E)\)</li>
 
-<li>connection
+<li>connection <br />
 \(S(N,V,E) = k_B \ln \Omega(N,V,E)\)</li>
 
 </ul>
@@ -71,17 +68,46 @@ entropy: \(S(N,V,E)\)
 </section>
 </section>
 <section>
-<section id="slide-orgba3f7b9">
-<h2 id="orgba3f7b9">Overview</h2>
+<section id="slide-orgf8d728d">
+<h2 id="orgf8d728d">Basic concepts</h2>
+<p>
+<b>Ergodic hypothesis:</b> A system with fixed \(N\), \(V\), and \(E\) (\(U\)) is
+equally likely to be found in any of its \(\Omega(N,V,E)\) microscopic
+states.
+</p>
 
+<p>
+Consider two subsets of states, \(\Omega_A\) and \(\Omega_B\). A system is
+more likely to be found in set A if \(\Omega_A&gt;\Omega_B\).
+</p>
+
+<p>
+Therefore \(S(\Omega_A)&gt;S(\Omega_B)\) as A is more likely, thus \(S\)
+must be a monotonically increasing function in \(\Omega\).&lt;br/&gt;
+</p>
+
+<p>
+As states increase multiplicatively, yet entropy is additive, the
+relationship must be logarithmic.
+</p>
+<div>
+\begin{equation*}
+S(N,V,E) = k_B \ln \Omega(N,V,E)
+\end{equation*}
+
+</div>
+<p>
+where \(k_B=1.3806503\times10^{-23}\) J K\(^{-1}\) is the Boltzmann
+constant, present for historic reasons.			    
+</p>
 
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org49ec29a">
-<h2 id="org49ec29a">Phase space</h2>
-<object type="image/svg+xml" data="../figures/phasespace.png" width="80%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
+<section id="slide-org0d715e5">
+<h2 id="org0d715e5">Phase space</h2>
+<object data="../figures/phasespace.png" width="80%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
     Your browser does not support SVG
 </object>
 
@@ -89,38 +115,12 @@ entropy: \(S(N,V,E)\)
 </section>
 </section>
 <section>
-<section id="slide-org794049c">
-<h2 id="org794049c">Basic concepts</h2>
+<section id="slide-org283cff7">
+<h2 id="org283cff7">Basic concepts</h2>
 <p>
-<b>Ergodic hypothesis:</b> A system with fixed \(N\), \(V\), and \(E\) (\(U\)) is
-equally likely to be found in any of its \(\Omega(N,V,E)\) microscopic
-states.
-</p>
-
-<p class="fragment">
-    Consider two subsets of states, $\Omega_A$ and $\Omega_B$. A system is more likely to be found in set A if $\Omega_A&gt;\Omega_B$.
-</p>
-<p class="fragment">
-    Therefore $S(\Omega_A)&gt;S(\Omega_B)$ as A is more likely, thus $S$ must be a monotonically increasing function in $\Omega$.<br/>
-</p>
-<p class="fragment">
-    As states increase multiplicatively, yet entropy is additive, the relationship must be logarithmic. 
-    \begin{equation*}
-    S(N,V,E) = k_B \ln \Omega(N,V,E)
-    \end{equation*}
-    where $k_B=1.3806503\times10^{-23}$ J K$^{-1}$ is the Boltzmann
-    constant, present for historic reasons.			    
-</p>
-
-<div class="slide-footer"></div>
-</section>
-</section>
-<section>
-<section id="slide-org84a9b7a">
-<h2 id="org84a9b7a">Basic concepts</h2>
-<p>
-Consider one microscopic state, \(\boldsymbol{\Gamma}\) out of the
-\(\Omega(N,V,E)\) microscopic states. Its probability is:
+Consider one microscopic state \(\boldsymbol{\Gamma}\) out of the
+\(\Omega(N,V,E)\) microscopic states.  The probability of its being
+occupied is:
 </p>
 <div>
 \begin{equation*}
@@ -130,8 +130,8 @@ Consider one microscopic state, \(\boldsymbol{\Gamma}\) out of the
 </div>
 
 <p>
-In the \(N\), \(V\), \(E\) ensemble, we can now determine average properties if
-the &lt;b&gt;density of states&lt;/b&gt;, \(\Omega(N,V,E)\) is known.
+In the \(NVE\) ensemble, we can now determine average properties if the
+<b>density of states</b>, \(\Omega(N,V,E)\) is known.
 </p>
 <div>
 \begin{align*}
@@ -139,7 +139,9 @@ the &lt;b&gt;density of states&lt;/b&gt;, \(\Omega(N,V,E)\) is known.
 &=
 \int {\rm d}{\boldsymbol\Gamma}\,{\mathcal P}({\boldsymbol\Gamma})\,
 {\mathcal A}({\boldsymbol\Gamma})
-= \lim_{t_{obs.}\to\infty} \frac{1}{t_{obs.}}\int_0^{t_{obs.}}\mathcal A(t)\,{\rm d}t
+=
+\lim_{t_{\rm obs}\to\infty} \frac{1}{t_{\rm obs}}
+\int_0^{t_{\rm obs}} {\rm d}t\,{\mathcal A}({\boldsymbol\Gamma}(t))
 \end{align*}
 
 </div>
@@ -149,8 +151,23 @@ the &lt;b&gt;density of states&lt;/b&gt;, \(\Omega(N,V,E)\) is known.
 </section>
 </section>
 <section>
-<section id="slide-orga478fca">
-<h2 id="orga478fca">Density of states</h2>
+<section id="slide-org8ce17b0">
+<h2 id="org8ce17b0">Overview</h2>
+<ul>
+<li>microcanonical ensemble: \(NVE\)</li>
+<li>canonical ensemble: \(NVT\)</li>
+<li>isothermal-isobaric ensemble: \(NpT\)</li>
+<li>fluid structure</li>
+<li>summary</li>
+
+</ul>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgb7ca7f4">
+<h2 id="orgb7ca7f4">Density of states</h2>
 <ul>
 <li>The density of states \(\Omega(N,V,E)\) is the number of ways the
 system can have an energy \(E\).  In other words, it is the "volume"
@@ -189,8 +206,8 @@ where \(\delta E\ll E\).
 </section>
 </section>
 <section>
-<section id="slide-org8e73cc9">
-<h2 id="org8e73cc9">Microcanonical ensemble</h2>
+<section id="slide-org51bbb0b">
+<h2 id="org51bbb0b">Microcanonical ensemble</h2>
 <p>
 <b>Fundamental equation of thermodynamics:</b>
 </p>
@@ -221,13 +238,69 @@ thermodynamic properties of the system can be determined.
 </blockquote>
 <br>
 
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgd5d19a7">
+<h2 id="orgd5d19a7">Example: lattice of two state sites</h2>
+<div class="gridded_frame_with_columns">
+<div class="one_of_2_columns">
+<img src="../figures/adsorption.png" width="80%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
+</div>
+
+<div class="one_of_2_columns">
+
+<ul>
+<li>\({\mathcal N}\) lattice sites</li>
+<li>Each lattice site has two states:
+state \(0\) with energy \(0\), and state \(1\) with energy \(\varepsilon\)</li>
+<li>If \(n_0\) is the number of sites in state \(0\), and \(n_1\) is the
+number of sites in state \(1\), the total energy of the system is
+\(E=n_1\varepsilon\).  Note \(n_0+n_1={\mathcal N}\).</li>
+<li><p>
+density of states:
+</p>
+<div>
+\begin{align*}
+\Omega(E) = \frac{{\mathcal N}!}{(E/\varepsilon)!({\mathcal N}-E/varepsilon)!}
+\end{align*}
+
+</div></li>
+
+</ul>
+
+</div>
+</div>
+
+
+<aside class="notes">
+nil
+</aside>
 
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org5f325b8">
-<h2 id="org5f325b8">Free energies in other ensembles</h2>
+<section id="slide-org75ee897">
+<h2 id="org75ee897">thermal equilibrium</h2>
+<div>
+<img src="../figures/adsorption2.png" width="50%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
+</div>
+
+<ul>
+<li>energy: \(E=E_A+E_B\)</li>
+<li>density of states: \(\Omega^{A+B}(E)=\Omega^A(E_A)\Omega^B(E_B)\)</li>
+<li>entropy: \(S^{A+B}(E)=S^A(E_A)+S^B(E_B)\)</li>
+
+</ul>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org1a7cf27">
+<h2 id="org1a7cf27">Free energies in other ensembles</h2>
 <p>
 The microcanonical ensemble (\(N\), \(V\), \(E\)) is very useful
 for molecular dynamics; however, other ensembles such as
@@ -266,13 +339,12 @@ A(T,V,N)
 Let's consider the probabilities of the (\(N\), \(V\), \(T\)) ensemble&#x2026;
 </p>
 
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgcf703c6">
-<h2 id="orgcf703c6">Canonical ensemble</h2>
+<section id="slide-orgb43fed5">
+<h2 id="orgb43fed5">Canonical ensemble</h2>
 <object type="image/svg+xml" data="../figures/canonical_ensemble.png" width="50%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
     Your browser does not support SVG
 </object>
@@ -290,13 +362,12 @@ Let's consider the probabilities of the (\(N\), \(V\), \(T\)) ensemble&#x2026;
 (Note: the \(N\) and \(V\) variables for the system and the surroundings are implicit)
 </p>
 
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgab4ce86">
-<h2 id="orgab4ce86">Canonical ensemble</h2>
+<section id="slide-org3169e23">
+<h2 id="org3169e23">Canonical ensemble</h2>
 <div>
 \begin{align*}
 {\mathcal P}(E,E_{\rm tot})
@@ -349,8 +420,8 @@ constant term \(\ln \Omega_B(E_{\rm tot})\) cancels on normalization)
 </section>
 </section>
 <section>
-<section id="slide-org825cd8c">
-<h2 id="org825cd8c">Canonical ensemble</h2>
+<section id="slide-orgfcace9f">
+<h2 id="orgfcace9f">Canonical ensemble</h2>
 <ul>
 <li><p>
 Boltzmann distribution
@@ -383,8 +454,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org1c862fe">
-<h2 id="org1c862fe">average energy</h2>
+<section id="slide-org9d5b22f">
+<h2 id="org9d5b22f">average energy</h2>
 <div>
 \begin{align*}
 \langle E\rangle
@@ -422,8 +493,8 @@ E\, \frac{\Omega(N, V, E)}{Q(N,V,\beta)} e^{ - \beta\,E}
 </section>
 </section>
 <section>
-<section id="slide-org31e9f13">
-<h2 id="org31e9f13">other derivatives</h2>
+<section id="slide-orge3e23a1">
+<h2 id="orge3e23a1">other derivatives</h2>
 <ul>
 <li>volume</li>
 
@@ -497,8 +568,8 @@ e^{-\beta\,E}
 </section>
 </section>
 <section>
-<section id="slide-org7c667c0">
-<h2 id="org7c667c0">Helmholtz free energy</h2>
+<section id="slide-orgcc7536d">
+<h2 id="orgcc7536d">Helmholtz free energy</h2>
 <ul>
 <li><p>
 free energy
@@ -538,8 +609,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org4078dbf">
-<h2 id="org4078dbf">Fluctuations</h2>
+<section id="slide-org5ed95f9">
+<h2 id="org5ed95f9">Fluctuations</h2>
 <div>
 \begin{align*}
 \langle E^2\rangle
@@ -606,8 +677,8 @@ statistics of the system.
 </section>
 </section>
 <section>
-<section id="slide-orgd15ef75">
-<h2 id="orgd15ef75">Partition function: density of states</h2>
+<section id="slide-orgd26f7d0">
+<h2 id="orgd26f7d0">Partition function: density of states</h2>
 <div>
 \begin{align*}
 Q(N,V,\beta)
@@ -649,8 +720,8 @@ The normalization constant which we defined in
 </section>
 </section>
 <section>
-<section id="slide-orgb01e969">
-<h2 id="orgb01e969">Factorization of the partition function</h2>
+<section id="slide-orgfa9c2a3">
+<h2 id="orgfa9c2a3">Factorization of the partition function</h2>
 <ul>
 <li><p>
 The partition function can be factorized
@@ -701,8 +772,8 @@ e^{-\beta\,U({\bf r}_1,\dots{\bf r}_N)}
 </section>
 </section>
 <section>
-<section id="slide-org3ad413d">
-<h2 id="org3ad413d">Average properties</h2>
+<section id="slide-org1170958">
+<h2 id="org1170958">Average properties</h2>
 <ul>
 <li><p>
 The probability of being at the phase point \({\boldsymbol\Gamma}\) is
@@ -752,8 +823,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org23b0eec">
-<h2 id="org23b0eec">Boltzmann distribution</h2>
+<section id="slide-org03f58e9">
+<h2 id="org03f58e9">Boltzmann distribution</h2>
 <div>
 \begin{align*}
 P(E)
@@ -771,8 +842,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-orgdcfb63d">
-<h2 id="orgdcfb63d">example: Barometric formula</h2>
+<section id="slide-org3d86014">
+<h2 id="org3d86014">example: Barometric formula</h2>
 <p>
 Ideal gas at temperature \(T\) in a gravitational field.
 </p>
@@ -825,8 +896,8 @@ consider the variation of gas in the atmosphere.
 </section>
 </section>
 <section>
-<section id="slide-orga6f327f">
-<h2 id="orga6f327f">example: Maxwell-Boltzmann velocity distribution</h2>
+<section id="slide-org663671b">
+<h2 id="org663671b">example: Maxwell-Boltzmann velocity distribution</h2>
 <ul>
 <li><p>
 Kinetic energy:
@@ -862,8 +933,8 @@ P({\bf v}) d{\bf v} &= (2\pi \beta m)^{-3/2} e^{-\beta m v^2/2} d{\bf v}
 </section>
 </section>
 <section>
-<section id="slide-org5f24de8">
-<h2 id="org5f24de8">Maxwell-Boltzmann velocity distribution</h2>
+<section id="slide-org91a4df5">
+<h2 id="org91a4df5">Maxwell-Boltzmann velocity distribution</h2>
 <img src="../figures/MB_velocity.png" width="40%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
 
 <div>
@@ -877,8 +948,8 @@ f(v_z) = (2\pi \beta m)^{-1/2} e^{-\beta m v_z^2/2}
 </section>
 </section>
 <section>
-<section id="slide-orgd42db8a">
-<h2 id="orgd42db8a">Maxwell-Boltzmann speed distribution</h2>
+<section id="slide-org7eb1901">
+<h2 id="org7eb1901">Maxwell-Boltzmann speed distribution</h2>
 <img src="../figures/MB_velocity.png" width="40%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
 
 <p>
@@ -895,8 +966,8 @@ F(v) dv = (2\pi \beta m)^{-3/2} e^{-\beta m v^2/2} 4\pi v^2 dv
 </section>
 </section>
 <section>
-<section id="slide-org19efcfc">
-<h2 id="org19efcfc">Grand canonical ensemble</h2>
+<section id="slide-orgd000422">
+<h2 id="orgd000422">Grand canonical ensemble</h2>
 <object data="../figures/grandcanonical_ensemble.png" width="50%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
     Your browser does not support SVG
 </object>
@@ -919,8 +990,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org05e3cba">
-<h2 id="org05e3cba">Grand canonical ensemble</h2>
+<section id="slide-org3305b5c">
+<h2 id="org3305b5c">Grand canonical ensemble</h2>
 <ul>
 <li><p>
 Boltzmann distribution
@@ -964,8 +1035,8 @@ d\ln Z_G(\mu, V, \beta) &= - E d\beta + \beta pdV + N d\beta\mu
 </section>
 </section>
 <section>
-<section id="slide-org7e21012">
-<h2 id="org7e21012">Isothermal-isobaric ensemble</h2>
+<section id="slide-orgc83d2e2">
+<h2 id="orgc83d2e2">Isothermal-isobaric ensemble</h2>
 <object data="../figures/grandcanonical_ensemble.png" width="50%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
     Your browser does not support SVG
 </object>
@@ -980,13 +1051,12 @@ d\ln Z_G(\mu, V, \beta) &= - E d\beta + \beta pdV + N d\beta\mu
 
 </div>
 
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgab737bf">
-<h2 id="orgab737bf">Isothermal-isobaric ensemble</h2>
+<section id="slide-orgf1eecab">
+<h2 id="orgf1eecab">Isothermal-isobaric ensemble</h2>
 <ul>
 <li><p>
 Boltmann distribution
@@ -1054,8 +1124,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org9a15836">
-<h2 id="org9a15836">Simple fluids</h2>
+<section id="slide-orge943d18">
+<h2 id="orge943d18">Simple fluids</h2>
 <ul>
 <li>\(N\) spherical atoms of mass \(m\)</li>
 <li>position of atom \(\alpha\) is \({\bf r}_\alpha\)</li>
@@ -1083,18 +1153,8 @@ K({\bf p}_1,\dots,{\bf p}_N)
 </section>
 </section>
 <section>
-<section id="slide-org533f55f">
-<h2 id="org533f55f">phase space</h2>
-<object type="image/svg+xml" data="../figures/phasespace.png" width="100%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
-    Your browser does not support SVG
-</object>
-
-<div class="slide-footer"></div>
-</section>
-</section>
-<section>
-<section id="slide-org9571eb8">
-<h2 id="org9571eb8">$n$-particle density</h2>
+<section id="slide-org039c861">
+<h2 id="org039c861">Fluid structure</h2>
 <ul>
 <li><p>
 The $n$-particle density \(\rho^{(n)}({\bf r}_1,\dots,{\bf r}_n)\)
@@ -1115,7 +1175,7 @@ space.
 </div></li>
 
 <li><p>
-This normalisation means that, for a homogeneous system,
+This normalization means that, for a homogeneous system,
 \(\rho^{(1)}({\bf r})=\rho=N/V\)
 </p>
 <div>
@@ -1135,8 +1195,8 @@ This normalisation means that, for a homogeneous system,
 </section>
 </section>
 <section>
-<section id="slide-orgafecff1">
-<h2 id="orgafecff1">$n$-particle correlation function</h2>
+<section id="slide-org0062103">
+<h2 id="org0062103">$n$-particle correlation function</h2>
 <ul>
 <li><p>
 The $n$-particle distribution function \(g^{(n)}({\bf r}_1,\dots,{\bf r}_n)\) is defined as
@@ -1178,8 +1238,8 @@ For an ideal gas (i.e., \(U=0\)):
 </section>
 </section>
 <section>
-<section id="slide-org12d6705">
-<h2 id="org12d6705">radial distribution function</h2>
+<section id="slide-org68f7bcf">
+<h2 id="org68f7bcf">radial distribution function</h2>
 <ul>
 <li><p>
 \(n=2\): pair density and pair distribution function in a homogeneous fluid
@@ -1225,8 +1285,8 @@ where \(r = |{\bf r}_1-{\bf r}_2|\)
 </section>
 </section>
 <section>
-<section id="slide-orga8f67ec">
-<h2 id="orga8f67ec">radial distribution function</h2>
+<section id="slide-orgfb2e277">
+<h2 id="orgfb2e277">radial distribution function</h2>
 <img src="../figures/bitmap/gofr1.png" width="40%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
 <img src="../figures/bitmap/spheres.png" width="40%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
 
@@ -1234,8 +1294,8 @@ where \(r = |{\bf r}_1-{\bf r}_2|\)
 </section>
 </section>
 <section>
-<section id="slide-org71a5049">
-<h2 id="org71a5049">radial distribution function</h2>
+<section id="slide-org7c8163e">
+<h2 id="org7c8163e">radial distribution function</h2>
 <ul>
 <li><p>
 Energy 
@@ -1279,8 +1339,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-orgdfbf99e">
-<h2 id="orgdfbf99e">structure factor</h2>
+<section id="slide-org28e36a2">
+<h2 id="org28e36a2">structure factor</h2>
 <ul>
 <li>Fourier component \(\hat{\rho}({\bf k})\) of the instantaneous single-particle density</li>
 
@@ -1325,8 +1385,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org22d4971">
-<h2 id="org22d4971">Fourier decomposition</h2>
+<section id="slide-org0e057d7">
+<h2 id="org0e057d7">Fourier decomposition</h2>
 <p>
 Consider the function
 </p>
@@ -1358,16 +1418,16 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org15102d8">
-<h2 id="org15102d8">Fourier decomposition</h2>
+<section id="slide-org2a8ec78">
+<h2 id="org2a8ec78">Fourier decomposition</h2>
 <img src="../figures/bitmap/decomposition.png" width="auto" height="80%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
 
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org9dca1ad">
-<h2 id="org9dca1ad">Structure factor</h2>
+<section id="slide-org83e17d3">
+<h2 id="org83e17d3">Structure factor</h2>
 <ul>
 <li>A peak at wavevector \(k\) signals density inhomogeneities on the
 length scale \(2\pi/k\)</li>
@@ -1404,8 +1464,8 @@ length scale \(2\pi/k\)</li>
 </section>
 </section>
 <section>
-<section id="slide-org390f7e9">
-<h2 id="org390f7e9">Questions?</h2>
+<section id="slide-org4b87cf6">
+<h2 id="org4b87cf6">Questions?</h2>
 <div class="slide-footer"></div>
 </section>
 </section>
