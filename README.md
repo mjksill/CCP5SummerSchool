@@ -28,6 +28,6 @@ Welcome to the CCP5 Summer School!
 # Exercises:
 
 - [Gas-water shift reaction](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-gws.ipynb)
-- [Molecular dynamics](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-MD.ipynb)
+- [Molecular dynamics](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-md.ipynb)
 
  
