@@ -20,3 +20,10 @@ Welcome to the CCP5 Summer School!
 - [Numerically solving algebraic equations](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-solver.ipynb)
 - [Error handling](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-exceptions.ipynb)
 - [File I/O](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-fileio.ipynb)
+- [Introduction to Pandas and data frames](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-pandas1.ipynb)
+- [Working with Pandas data frames](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-pandas2.ipynb)
+- [Importing data into Pandas directly from websites](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-pandas3.ipynb)
+- [Filtering and exploring data with Pandas](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-pandas4.ipynb)
+
+
+ 
