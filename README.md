@@ -2,11 +2,20 @@
 
 Welcome to the CCP5 Summer School!
 
-# Slides
+# Statistical mechanics
+
+## Slides
 - [Statistical Mechanics 1](https://mjksill.github.io/CCP5SummerSchool/slides/statmech1_notes.html)
 - [Statistical Mechanics 2](https://mjksill.github.io/CCP5SummerSchool/slides/statmech2_notes.html)
 
+## Worksheet
+
+- [problem sheet](https://mjksill.github.io/CCP5SummerSchool/tutorials/tutorial.pdf)
+
 # Jupyter notebooks
+
+## Tutorials:
+
 - [Introduction to Python](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-introduction.ipynb)
 - [Python as a calculator](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-calculator.ipynb)
 - [Python as an advanced calculator](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-variables.ipynb)
@@ -25,7 +34,7 @@ Welcome to the CCP5 Summer School!
 - [Importing data into Pandas directly from websites](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-pandas3.ipynb)
 - [Filtering and exploring data with Pandas](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-pandas4.ipynb)
 
-# Exercises:
+## Exercises:
 
 - [Gas-water shift reaction](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-gws.ipynb)
 - [Molecular dynamics](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-md.ipynb)
