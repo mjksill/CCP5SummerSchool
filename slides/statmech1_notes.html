@@ -14,17 +14,6 @@
 <link rel="stylesheet" href="../../reveal.js/dist/theme/black.css" id="theme"/>
 
 <link rel="stylesheet" href="./grids.css"/>
-
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = '../../reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
-</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
@@ -32,8 +21,8 @@
 <div class="slides">
 
 <section>
-<section id="slide-org3d18f59" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
-<h2 id="org3d18f59"></h2>
+<section id="slide-org596dd45" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
+<h2 id="org596dd45"></h2>
 <h1 style="background-color:rgba(1, 1, 1, 0.5)">
 Statistical Mechanics 1
 </h1>
@@ -60,8 +49,8 @@ University of Strathclyde
 </section>
 </section>
 <section>
-<section id="slide-org5fab368" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
-<h2 id="org5fab368">Statistical mechanics</h2>
+<section id="slide-orge2b4fb3" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
+<h2 id="orge2b4fb3">Statistical mechanics</h2>
 
 <p class="backbox" style="background:rgba(0, 0, 0, 0.5)">
 <em>
@@ -76,11 +65,11 @@ University of Strathclyde
 </section>
 </section>
 <section>
-<section id="slide-org8b5952b">
-<h2 id="org8b5952b">Statistical mechanics</h2>
+<section id="slide-org675f521">
+<h2 id="org675f521">Statistical mechanics</h2>
 <div class="column" style="float:left; width:50%">
 
-<div id="org49a6f06" class="figure">
+<div id="org500b42a" class="figure">
 <p><img src="../figures/bitmap/water.png" alt="water.png" height="500" />
 </p>
 </div>
@@ -88,7 +77,7 @@ University of Strathclyde
 
 <div class="column" style="float:right; width:50%">
 
-<div id="org2d8d688" class="figure">
+<div id="org2c29245" class="figure">
 <p><img src="../figures/bitmap/liquidwater.png" alt="liquidwater.png" height="500" width="auto" />
 </p>
 </div>
@@ -155,8 +144,8 @@ that. Yep, next slide, thanks.
 </section>
 </section>
 <section>
-<section id="slide-org57c837c">
-<h2 id="org57c837c">Overview</h2>
+<section id="slide-orgf52ecb1">
+<h2 id="orgf52ecb1">Overview</h2>
 <ul>
 <li>Thermodynamics</li>
 <li>Microscopic dynamics</li>
@@ -168,8 +157,8 @@ that. Yep, next slide, thanks.
 </section>
 </section>
 <section>
-<section id="slide-org5fbc55e">
-<h2 id="org5fbc55e">Basic concepts in thermodynamics</h2>
+<section id="slide-orgf6cd333">
+<h2 id="orgf6cd333">Basic concepts in thermodynamics</h2>
 <p>
 Thermodynamics is a phenomenological theory that describes the
 properties of systems, and their relationships, when in equilibrium.
@@ -195,8 +184,8 @@ properties of systems, and their relationships, when in equilibrium.
 </section>
 </section>
 <section>
-<section id="slide-org40a83c5">
-<h2 id="org40a83c5">First law of thermodynamics</h2>
+<section id="slide-org0f5e85d">
+<h2 id="org0f5e85d">First law of thermodynamics</h2>
 <blockquote>
 <b>First law of thermodynamics:</b>
 Energy cannot be created or destroyed, but it can transform from one
@@ -276,8 +265,8 @@ What is a renewable resource?
 </section>
 </section>
 <section>
-<section id="slide-orga65ae11">
-<h2 id="orga65ae11">Second law of thermodynamics</h2>
+<section id="slide-orgf1d47a6">
+<h2 id="orgf1d47a6">Second law of thermodynamics</h2>
 <blockquote>
 <b>Clausius statement:</b>
 No process is possible whose sole result is the transfer of heat from
@@ -347,8 +336,8 @@ This provides an
 </section>
 </section>
 <section>
-<section id="slide-org66553f1">
-<h2 id="org66553f1">Combined first and second laws</h2>
+<section id="slide-orgaa2117b">
+<h2 id="orgaa2117b">Combined first and second laws</h2>
 <ul>
 <li><p>
 first law
@@ -422,8 +411,8 @@ The difficulty with using this inequality
 </section>
 </section>
 <section>
-<section id="slide-orgc23696c">
-<h2 id="orgc23696c">Fundamental equation of thermodynamics</h2>
+<section id="slide-orga580c0c">
+<h2 id="orga580c0c">Fundamental equation of thermodynamics</h2>
 <p>
 For general transformations:
 </p>
@@ -457,8 +446,8 @@ This tells
 </section>
 </section>
 <section>
-<section id="slide-orgab40318">
-<h2 id="orgab40318">Calculus of thermodynamics</h2>
+<section id="slide-orgf0c4cbf">
+<h2 id="orgf0c4cbf">Calculus of thermodynamics</h2>
 <p>
 For quasi-equilibrium transformations:
 </p>
@@ -475,7 +464,7 @@ For \(f(x,y,z)\):
 <div>
 \begin{equation*}
 df
-&=
+=
 \left(\frac{\partial f}{\partial x}\right)_{y,z} dx
 + \left(\frac{\partial f}{\partial y}\right)_{x,z} dy
 + \left(\frac{\partial f}{\partial z}\right)_{x,y} dz
@@ -528,8 +517,8 @@ of three variables.
 </section>
 </section>
 <section>
-<section id="slide-org9634f08">
-<h2 id="org9634f08">Calculus of thermodynamics</h2>
+<section id="slide-org9aa677d">
+<h2 id="org9aa677d">Calculus of thermodynamics</h2>
 <p>
 For quasi-equilibrium transformations:
 </p>
@@ -563,9 +552,10 @@ This implies \(E(N,V,S)\) and
 </section>
 </section>
 <section>
-<section id="slide-org683f20a">
-<h2 id="org683f20a">Maxwell relations</h2>
-<p>
+<section id="slide-orga29459c">
+<h2 id="orga29459c">Maxwell relations</h2>
+<ul>
+<li><p>
 At equilibrium, \(S(N,V,E)\) and
 </p>
 <div>
@@ -573,9 +563,9 @@ At equilibrium, \(S(N,V,E)\) and
 dS = - \frac{\mu}{T}dN + \frac{p}{T}dV  + \frac{dE}{T}
 \end{equation*}
 
-</div>
+</div></li>
 
-<p>
+<li><p>
 Mixed partial derivatives:
 </p>
 <div>
@@ -587,9 +577,9 @@ Mixed partial derivatives:
 \left(\frac{\partial f}{\partial x}\right)
 \end{align*}
 
-</div>
+</div></li>
 
-<p>
+<li><p>
 Maxwell relations:
 </p>
 <div>
@@ -607,14 +597,16 @@ Maxwell relations:
 - \left[\frac{\partial}{\partial V}\left(\frac{\mu}{T}\right)\right]_{V,N}
 \end{align*}
 
-</div>
+</div></li>
+
+</ul>
 
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org3e62942">
-<h2 id="org3e62942">maximum work</h2>
+<section id="slide-org269fe83">
+<h2 id="org269fe83">maximum work</h2>
 <p>
 For general transformations:
 </p>
@@ -641,15 +633,15 @@ The is the maximum work that can be extracted from
 </section>
 </section>
 <section>
-<section id="slide-orge832d76">
-<h2 id="orge832d76">maximum entropy</h2>
+<section id="slide-org2fe1661">
+<h2 id="org2fe1661">maximum entropy</h2>
 <p>
 For general transformations:
 </p>
 <div>
 \begin{equation*}
 dS
-&\ge
+\ge
 \frac{dE}{T}
 + \frac{p}{T}dV - \frac{\mu}{T}dN
 + \frac{1}{T}\delta W'
@@ -658,13 +650,13 @@ dS
 </div>
 
 <p>
-If extract or do no work on the system (i.e. \(\delta W'=0\))
+If do not extract or do work on the system (i.e. \(\delta W'=0\))
 and we hold \(E\), \(V\), and \(N\) constant:
 </p>
 <div>
 \begin{equation*}
 dS
-&\ge
+\ge
 0
 \end{equation*}
 
@@ -683,8 +675,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-orgdd173ca">
-<h2 id="orgdd173ca">Legendre transforms and free energies</h2>
+<section id="slide-org4949aeb">
+<h2 id="org4949aeb">Legendre transforms and free energies</h2>
 <ul>
 <li><p>
 \(E(N,V,S)\):
@@ -718,8 +710,8 @@ So we find \(A(N,V,T)\).
 </section>
 </section>
 <section>
-<section id="slide-orgdb295d1">
-<h2 id="orgdb295d1">Legendre transforms and free energies</h2>
+<section id="slide-org30d3c06">
+<h2 id="org30d3c06">Legendre transforms and free energies</h2>
 <ul>
 <li><p>
 internal energy: \(E(N,V,S)\)
@@ -767,8 +759,8 @@ dH &\le \mu dN + Vdp + TdS - \delta W'
 </section>
 </section>
 <section>
-<section id="slide-orgb349f10">
-<h2 id="orgb349f10">Importance of free energy</h2>
+<section id="slide-org1d40807">
+<h2 id="org1d40807">Importance of free energy</h2>
 <ul>
 <li>Knowledge of the free energy of the system in terms of its "natural"
 variables, all equilibrium thermodynamics properties can be
@@ -799,8 +791,8 @@ work required to perform a transformation if it is non-spontaneous.
 </section>
 </section>
 <section>
-<section id="slide-org9f02dcc">
-<h2 id="org9f02dcc">Microscopic dynamics</h2>
+<section id="slide-org24267d1">
+<h2 id="org24267d1">Microscopic dynamics</h2>
 <p>
 particle systems
 </p>
@@ -815,8 +807,8 @@ particle systems
 </section>
 </section>
 <section>
-<section id="slide-org1806456">
-<h2 id="org1806456">Example: Simple fluid</h2>
+<section id="slide-org5705426">
+<h2 id="org5705426">Example: Simple fluid</h2>
 <ul>
 <li>\(N\) spherical atoms of mass \(m\)</li>
 <li>position of atom \(\alpha\) is \({\bf r}_\alpha\)</li>
@@ -844,8 +836,8 @@ K({\bf p}_1,\dots,{\bf p}_N)
 </section>
 </section>
 <section>
-<section id="slide-orgd3a6b9e">
-<h2 id="orgd3a6b9e">Classical mechanics</h2>
+<section id="slide-orgfac40a3">
+<h2 id="orgfac40a3">Classical mechanics</h2>
 <p>
 Newton's equation of motion
 </p>
@@ -880,8 +872,8 @@ where \(V({\bf r}_1, {\bf r}_2,\dots,{\bf r}_N)\) is the interaction potential.
 </section>
 </section>
 <section>
-<section id="slide-orge313ef3">
-<h2 id="orge313ef3">Hamiltonian formulation</h2>
+<section id="slide-org11d5597">
+<h2 id="org11d5597">Hamiltonian formulation</h2>
 <p>
 Hamiltonian:
 </p>
@@ -915,8 +907,8 @@ The Hamiltonian dictates the dynamics (i.e. time evolution) of the system.
 </section>
 </section>
 <section>
-<section id="slide-org21d1cca">
-<h2 id="org21d1cca">phase space</h2>
+<section id="slide-orgbe553d0">
+<h2 id="orgbe553d0">phase space</h2>
 <object data="../figures/phasespace.png" width="80%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
     Your browser does not support SVG
 </object>
@@ -925,8 +917,8 @@ The Hamiltonian dictates the dynamics (i.e. time evolution) of the system.
 </section>
 </section>
 <section>
-<section id="slide-org2cee4b9">
-<h2 id="org2cee4b9">Liouville's Theorem</h2>
+<section id="slide-org87fcc11">
+<h2 id="org87fcc11">Liouville's Theorem</h2>
 <p>
 We can treat an ensemble of systems flowing around phase
 space as an incompressible fluid with density
@@ -981,8 +973,8 @@ heirarchy and ultimately Boltzmann's/Enskog's equation.
 </section>
 </section>
 <section>
-<section id="slide-org7060a61">
-<h2 id="org7060a61">Microstates</h2>
+<section id="slide-org38babc9">
+<h2 id="org38babc9">Microstates</h2>
 <ul>
 <li>The state of the system is specified by the positions and
 momenta of all its particles (\(2Nd\) quantities).</li>
@@ -1012,17 +1004,17 @@ history is known and governed by Newton's laws of motion.</li>
 </section>
 </section>
 <section>
-<section id="slide-org9f98f95">
-<h2 id="org9f98f95">Quantum mechanics</h2>
+<section id="slide-org526dcb0">
+<h2 id="org526dcb0">Quantum mechanics</h2>
 <ul>
 <li><p>
 The state of a system is characterized by a function (abstract
 vector): the wave function.  For a system of \(N\) particles:
 </p>
 <div>
-\begin{equation*}
-\psi({\bf r}_1, {\bf r}_2,\dots,{\bf r}_N)
-\end{equation*}
+\begin{align*}
+\psi({\bf r}_1, {\bf r}_2,\dots,{\bf r}_N) &
+\end{align*}
 
 </div></li>
 
@@ -1052,8 +1044,8 @@ wave function.</li>
 </section>
 </section>
 <section>
-<section id="slide-org20cbd40">
-<h2 id="org20cbd40">Quantum mechanics</h2>
+<section id="slide-org2c17062">
+<h2 id="org2c17062">Quantum mechanics</h2>
 <p>
 Hamiltonian:
 </p>
@@ -1061,14 +1053,14 @@ Hamiltonian:
 \begin{equation*}
 \hat{H}
 =
-- \sum_\alpha \frac{\hbar^2}{2m} \nabla^2
+- \sum_\alpha \frac{\hbar^2}{2m_\alpha} \nabla_\alpha^2
 + V({\bf r}_1, {\bf r}_2,\dots,{\bf r}_N) 
 \end{equation*}
 
 </div>
 
 <p>
-Time dependent Schr\"odinger equation:
+Time dependent Schrodinger equation:
 </p>
 <div>
 \begin{equation*}
@@ -1087,15 +1079,16 @@ The Hamiltonian dictates the dynamics (i.e. time evolution) of the system.
 </section>
 </section>
 <section>
-<section id="slide-org7de7b37">
-<h2 id="org7de7b37">Stochastic dynamics</h2>
+<section id="slide-orgaa540d4">
+<h2 id="orgaa540d4">Stochastic dynamics</h2>
 <ul>
 <li>state: \({\boldsymbol\Gamma}\) (can be continuous or discrete)</li>
 
 <li>transition probabilities: \(\Pi({\boldsymbol\Gamma}'\leftarrow{\boldsymbol\Gamma})\)   
 <ul>
 <li><p>
-Detailed balance:  There exists a stationary distribution \(\rho^*({\boldsymbol\Gamma)\)
+Detailed balance:  There exists a stationary distribution
+\(\rho^*({\boldsymbol\Gamma})\)
 such that
 </p>
 <div>
@@ -1133,8 +1126,8 @@ dynamics (discrete states)
 </section>
 </section>
 <section>
-<section id="slide-org0866280">
-<h2 id="org0866280">Observable properties</h2>
+<section id="slide-orga3af9f6">
+<h2 id="orga3af9f6">Observable properties</h2>
 <ul>
 <li>Observable: \({\mathcal A}({\boldsymbol\Gamma})\)</li>
 
@@ -1182,8 +1175,8 @@ ensemble average
 </section>
 </section>
 <section>
-<section id="slide-org12c848a">
-<h2 id="org12c848a">Density of states</h2>
+<section id="slide-orgfaec77d">
+<h2 id="orgfaec77d">Density of states</h2>
 <ul>
 <li>The density of states \(\Omega(N,V,E)\) is the number of ways the
 system can have an energy \(E\).  In other words, it is the "volume"
@@ -1222,8 +1215,8 @@ where \(\delta E\ll E\).
 </section>
 </section>
 <section>
-<section id="slide-org3d83fe0">
-<h2 id="org3d83fe0">Averaging</h2>
+<section id="slide-orgbfe5337">
+<h2 id="orgbfe5337">Averaging</h2>
 <p>
   <em>God does not play dice. <span style="float:right;">A. Einstein</span></em>
 </p>
@@ -1239,14 +1232,14 @@ You are the omnipotent being of your simulation, so you get to choose:
 \begin{align*}
 \langle{\mathcal A}\rangle
 &=
-\sum_{\boldsymbol\Gamma} d{\boldsymbol\Gamma}\,P({\boldsymbol\Gamma})\,
+\int d{\boldsymbol\Gamma} d{\boldsymbol\Gamma}\,P({\boldsymbol\Gamma})\,
 {\mathcal A}({\boldsymbol\Gamma}) & \text{(Monte Carlo)}
 \\
 &\text{or}
 \\
 \langle{\mathcal A}\rangle
 &=
-\lim_{t_{obs.}\to\infty} \frac{1}{t_{obs.}}\int_0^{t_{obs.}}\mathcal A(t)\,{\rm d}t
+\lim_{t_{\rm obs}\to\infty} \frac{1}{t_{\rm obs}}\int_0^{t_{\rm obs}}\mathcal A(t)\,{\rm d}t
 & \text{(Molecular Dynamics)}
 \end{align*}
 
@@ -1261,8 +1254,8 @@ But are these equivalent?  If so, the system is ergodic
 </section>
 </section>
 <section>
-<section id="slide-org9c64685">
-<h2 id="org9c64685">Ergodic hypothesis</h2>
+<section id="slide-org0741d59">
+<h2 id="org0741d59">Ergodic hypothesis</h2>
 <p>
 A system with fixed \(N\), \(V\), and \(E\) is equally likely to be found in
 any of its \(\Omega(N,V,E)\) microscopic states.  Microstates with the
@@ -1283,24 +1276,14 @@ must be a monotonically increasing function in \(\Omega\).
 As states increase multiplicatively, yet entropy is additive, the
 relationship must be logarithmic.
 </p>
-<div>
-\begin{equation*}
-S(N,V,E) = k_B \ln \Omega(N,V,E)
-\end{equation*}
-
-</div>
-<p>
-where \(k_B=1.3806503\times10^{-23}\) J K\(^{-1}\) is the Boltzmann
-constant.
-</p>
 
 
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgddb0304" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
-<h2 id="orgddb0304">Statistical mechanics</h2>
+<section id="slide-orgb87a283" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
+<h2 id="orgb87a283">Statistical mechanics</h2>
 <p class="backbox" style="background:rgba(0, 0, 0, 0.5)">
   <img src="../figures/bitmap/Boltzmann_equation.jfif"><br/>
 </p>
@@ -1313,8 +1296,8 @@ where \(W=\Omega\), and \(k.=k_B\).
 </section>
 </section>
 <section>
-<section id="slide-org4d6bcc6">
-<h2 id="org4d6bcc6">Statistical mechanics</h2>
+<section id="slide-org55d86dc">
+<h2 id="org55d86dc">Statistical mechanics</h2>
 <div>
 \begin{align*}
 S(N,V,E)
@@ -1323,6 +1306,10 @@ k_B \ln \Omega(N,V,E)
 \end{align*}
 
 </div>
+<p>
+where \(k_B=1.3806503\times10^{-23}\) J K\(^{-1}\) is the Boltzmann
+constant.
+</p>
 
 <p>
 Fundamental equation of thermodynamics:
@@ -1344,18 +1331,17 @@ At fixed \(N\), \(V\), and \(E\), \(\Omega(N,V,E)\) is maximized at equilibrium.
 </p>
 
 
-<blockquote>
-Once the density of states $\Omega(N,V,E)$ is known, all the
+<p>
+Once the density of states \(\Omega(N,V,E)\) is known, all the
 thermodynamic properties of the system can be determined.
-</blockquote>
-<br>
+</p>
 
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org710bb4f">
-<h2 id="org710bb4f">Ergodicity</h2>
+<section id="slide-org30392a5">
+<h2 id="org30392a5">Ergodicity</h2>
 <p>
 Phase space is so unbelievably big even for small systems it actually
 "feels" impossible for any trajectory to meaningfully visit all
@@ -1380,8 +1366,8 @@ more frequently to MD simulations too.
 </section>
 </section>
 <section>
-<section id="slide-orge4db2f7">
-<h2 id="orge4db2f7">Entropy</h2>
+<section id="slide-org3498355">
+<h2 id="org3498355">Entropy</h2>
 <ul>
 <li>The second law of thermodynamics, put simply, is that
 the most likely things will eventually happen and stay
@@ -1407,8 +1393,8 @@ transition of hard spheres).</li>
 </section>
 </section>
 <section>
-<section id="slide-org77860a0">
-<h2 id="org77860a0">Questions?</h2>
+<section id="slide-orgf01a023">
+<h2 id="orgf01a023">Questions?</h2>
 <div class="slide-footer"></div>
 </section>
 </section>
