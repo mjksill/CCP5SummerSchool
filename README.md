@@ -40,7 +40,4 @@ Welcome to the CCP5 Summer School!
 - [Molecular dynamics](https://colab.research.google.com/github/mjksill/CCP5SummerSchool/blob/master/notebooks/CCP5-md.ipynb)
 
 
-## Extras
-
-- [Example: Stock/Data analysis using Pandas](https://colab.research.google.com/github/toastedcrumpets/CCP5_Python_examples/blob/master/05-
  
