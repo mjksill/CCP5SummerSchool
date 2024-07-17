@@ -10,7 +10,7 @@ Welcome to the CCP5 Summer School!
 
 ## Worksheet
 
-- [problem sheet](https://mjksill.github.io/CCP5SummerSchool/tutorials/tutorial.pdf)
+- [problem sheet](https://mjksill.github.io/CCP5SummerSchool/tutorials/tutorial.pdf)  [(model solution)](https://mjksill.github.io/CCP5SummerSchool/tutorials/tutorial-soln.pdf)
 
 # Jupyter notebooks
 
