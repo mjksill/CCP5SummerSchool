@@ -14,17 +14,25 @@
 <link rel="stylesheet" href="../../reveal.js/dist/theme/black.css" id="theme"/>
 
 <link rel="stylesheet" href="./grids.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
-
-
-
 <section>
-<section id="slide-orgffef7a3" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
-<h2 id="orgffef7a3"></h2>
+<section id="slide-org9e24dbf" data-background="../figures/bitmap/Boltzmann_grave.jpg" data-background-size="100%">
+<h2 id="org9e24dbf"></h2>
 <h1 style="background-color:rgba(1, 1, 1, 0.5)">
 Statistical Mechanics 2
 </h1>
@@ -46,13 +54,12 @@ University of Strathclyde
 </p>
 </h3>
 </div>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org02cd93f">
-<h2 id="org02cd93f">Review</h2>
+<section id="slide-org314c8d1">
+<h2 id="org314c8d1">Review</h2>
 <ul>
 <li>thermodynamics <br />
 entropy: \(S(N,V,E)\) <br />
@@ -66,24 +73,21 @@ density of states: \(\Omega(N,V,E)\)</li>
 where \(k_B=1.3806503\times10^{-23}\) J K\(^{-1}\) is the Boltzmann constant</li>
 
 </ul>
-
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgd60d10d">
-<h2 id="orgd60d10d">Phase space</h2>
+<section id="slide-org7ffff25">
+<h2 id="org7ffff25">Phase space</h2>
 <object data="../figures/phasespace.png" width="80%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
     Your browser does not support SVG
 </object>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orge5549f4">
-<h2 id="orge5549f4">Density of states</h2>
+<section id="slide-org8e821f7">
+<h2 id="org8e821f7">Density of states</h2>
 <ul>
 <li>The density of states \(\Omega(N,V,E)\) is the number of ways the
 system can have an energy \(E\).  In other words, it is the "volume"
@@ -117,13 +121,12 @@ where \(h\) is Planck's constant.
 </p></li>
 
 </ul>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org9d20930">
-<h2 id="org9d20930">Basic concepts</h2>
+<section id="slide-org8365556">
+<h2 id="org8365556">Basic concepts</h2>
 <p>
 Consider one microscopic state \(\boldsymbol{\Gamma}\) out of the
 \(\Omega(N,V,E)\) microscopic states.  The probability of its being
@@ -152,13 +155,12 @@ In the \(NVE\) ensemble, we can now determine average properties if the
 \end{align*}
 
 </div>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org8397266">
-<h2 id="org8397266">Overview</h2>
+<section id="slide-org2630c70">
+<h2 id="org2630c70">Overview</h2>
 <ul>
 <li>microcanonical ensemble: \(NVE\)</li>
 <li>canonical ensemble: \(NVT\)</li>
@@ -167,13 +169,12 @@ In the \(NVE\) ensemble, we can now determine average properties if the
 <li>summary</li>
 
 </ul>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org143c4fe">
-<h2 id="org143c4fe">Microcanonical ensemble</h2>
+<section id="slide-org3985fbb">
+<h2 id="org3985fbb">Microcanonical ensemble</h2>
 <div>
 \begin{align*}
 S(N,V,E)
@@ -218,15 +219,12 @@ At fixed \(N\), \(V\), and \(E\), \(\Omega(N,V,E)\) is maximized at
 equilibrium.  Once the density of states \(\Omega(N,V,E)\) is known, all
 the thermodynamic properties of the system can be determined.
 </p>
-
-
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org09d2c47">
-<h2 id="org09d2c47">Example: lattice of two state sites</h2>
+<section id="slide-org485f67b">
+<h2 id="org485f67b">Example: lattice of two state sites</h2>
 <div class="gridded_frame_with_columns">
 <div class="one_of_2_columns">
 <img src="../figures/adsorption.png" width="80%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
@@ -260,13 +258,12 @@ density of states:
 <aside class="notes">
 nil
 </aside>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgb31dc69">
-<h2 id="orgb31dc69">thermal equilibrium</h2>
+<section id="slide-orge04498a">
+<h2 id="orge04498a">thermal equilibrium</h2>
 <div>
 <img src="../figures/adsorption2.png" width="50%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
 </div>
@@ -277,14 +274,13 @@ nil
 <li>entropy: \(S_{A+B}(E)=S_A(E_A)+S_B(E_B)\)</li>
 
 </ul>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org21ef928">
-<h2 id="org21ef928">Canonical ensemble</h2>
-<object type="image/svg+xml" data="../figures/canonical_ensemble.png" width="50%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
+<section id="slide-org18f74bf">
+<h2 id="org18f74bf">Canonical ensemble</h2>
+<object data="../figures/canonical_ensemble.png" width="50%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
     Your browser does not support SVG
 </object>
 
@@ -300,13 +296,12 @@ nil
 <p>
 (Note: the \(N\) and \(V\) variables for the system and the surroundings are implicit)
 </p>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org9cec308">
-<h2 id="org9cec308">Canonical ensemble</h2>
+<section id="slide-org42caee9">
+<h2 id="org42caee9">Canonical ensemble</h2>
 <div>
 \begin{align*}
 {\mathcal P}(E,E_{\rm tot})
@@ -354,13 +349,12 @@ tot}) - \beta E} \end{align*}
 (If the surroundings are large, \(E_{\rm tot}\) is unimportant and the
 constant term \(\ln \Omega_B(E_{\rm tot})\) cancels on normalization)
 </p>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgf54fc1d">
-<h2 id="orgf54fc1d">Canonical ensemble</h2>
+<section id="slide-orgf41ba7d">
+<h2 id="orgf41ba7d">Canonical ensemble</h2>
 <ul>
 <li><p>
 Boltzmann distribution
@@ -388,13 +382,12 @@ Q(N,V,\beta) = \int {\rm d}E\,\Omega(N,V,E) e^{-\beta\,E}
 <aside class="notes">
 nil
 </aside>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgc1e8862">
-<h2 id="orgc1e8862">average energy</h2>
+<section id="slide-orgd76a65f">
+<h2 id="orgd76a65f">average energy</h2>
 <div>
 \begin{align*}
 \langle E\rangle
@@ -427,13 +420,12 @@ E\, \frac{\Omega(N, V, E)}{Q(N,V,\beta)} e^{ - \beta\,E}
 \end{align*}
 
 </div>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orga5123ae">
-<h2 id="orga5123ae">volume derivative</h2>
+<section id="slide-orgb9b9a46">
+<h2 id="orgb9b9a46">volume derivative</h2>
 <div>
 \begin{align*}
 \frac{\partial}{\partial V}
@@ -463,13 +455,12 @@ e^{-\beta\,E}
 \end{align*}
 
 </div>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org018eb38">
-<h2 id="org018eb38">number derivative</h2>
+<section id="slide-org7cbdd0b">
+<h2 id="org7cbdd0b">number derivative</h2>
 <div>
 \begin{align*}
 \frac{\partial}{\partial N}
@@ -499,14 +490,12 @@ e^{-\beta\,E}
 \end{align*}
 
 </div>
-
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org277c69b">
-<h2 id="org277c69b">Helmholtz free energy</h2>
+<section id="slide-org2afab6c">
+<h2 id="org2afab6c">Helmholtz free energy</h2>
 <ul>
 <li><p>
 free energy
@@ -541,13 +530,12 @@ Again, all thermodynamic properties can be derived from \(Q(N,\,V,\,\beta)\).
 <aside class="notes">
 nil
 </aside>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org34a5eb3">
-<h2 id="org34a5eb3">Fluctuations</h2>
+<section id="slide-org6fc4e13">
+<h2 id="org6fc4e13">Fluctuations</h2>
 <div>
 \begin{align*}
 \langle E^2\rangle
@@ -584,10 +572,16 @@ E^2\, \frac{\Omega(N, V, E)}{Q(N,V,\beta)} e^{ - \beta\,E}
 \end{align*}
 
 </div>
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgcd1eee6">
+<h2 id="orgcd1eee6">Fluctuations</h2>
+<ul>
+<li>Energy fluctuations:</li>
 
-<p>
-Energy fluctuations:
-</p>
+</ul>
 <div>
 \begin{align*}
 \langle (E-\langle E\rangle)^2\rangle
@@ -601,6 +595,23 @@ Energy fluctuations:
 
 </div>
 
+<ul>
+<li>Fluctuation-dissipation theorem</li>
+
+</ul>
+<div>
+\begin{align*}
+\Delta E
+&=
+C_V
+\Delta T
+\\
+&=
+k_B \beta^2 \langle (E-\langle E\rangle)^2\rangle
+\Delta T
+\end{align*}  
+
+</div>
 
 <aside class="notes">
 <p>
@@ -609,13 +620,12 @@ statistics of the system.
 </p>
 
 </aside>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org0ae8491">
-<h2 id="org0ae8491">Partition function: density of states</h2>
+<section id="slide-org417dfc1">
+<h2 id="org417dfc1">Partition function: density of states</h2>
 <div>
 \begin{align*}
 Q(N,V,\beta)
@@ -631,15 +641,15 @@ integral over phase space coordinates:
 </p>
 <div>
 \begin{align*}
-Q(N,V,\beta) &= \int dE \Omega(N,V,E) e^{-\beta E}
+Q(N,V,\beta) &= \int dE\, \Omega(N,V,E) e^{-\beta E}
 \\
-&= \int dE e^{-\beta E}
+&= \int dE\, e^{-\beta E}
 \int_{E \lt  H({\boldsymbol\Gamma})\lt E+\delta E} d{\boldsymbol\Gamma} 
 \\
 &= \int d{\boldsymbol\Gamma}\, e^{-\beta H({\Gamma})}
 \\
 &= \frac{1}{N!}\int \frac{d{\bf r}_1d{\bf p}_1}{h^3}
-\cdots \frac{d{\bf r}_N d{\bf p}_N}{h^3}
+\cdots \frac{d{\bf r}_N d{\bf p}_N}{h^3}\,
 e^{-\beta H({\Gamma})}
 \end{align*}
 
@@ -652,13 +662,12 @@ The normalization constant which we defined in
 </p>
 
 </aside>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org5ffb0a8">
-<h2 id="org5ffb0a8">Factorization of the partition function</h2>
+<section id="slide-orgc41ad0e">
+<h2 id="orgc41ad0e">Factorization of the partition function</h2>
 <ul>
 <li><p>
 The partition function can be factorized: For \(H=U+K\)
@@ -704,13 +713,12 @@ e^{-\beta\,U({\bf r}_1,\dots{\bf r}_N)}
 </div></li>
 
 </ul>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgd26d609">
-<h2 id="orgd26d609">Average properties</h2>
+<section id="slide-orgb3d83eb">
+<h2 id="orgb3d83eb">Average properties</h2>
 <ul>
 <li><p>
 The probability of being at the phase point \({\boldsymbol\Gamma}\) is
@@ -755,13 +763,12 @@ If the property depends only on the position of the particles
 <aside class="notes">
 nil
 </aside>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org213142b">
-<h2 id="org213142b">Boltzmann distribution</h2>
+<section id="slide-org7759ab4">
+<h2 id="org7759ab4">Boltzmann distribution</h2>
 <div>
 \begin{align*}
 P(E)
@@ -774,13 +781,12 @@ e^{-\beta E}
 <aside class="notes">
 nil
 </aside>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgcfe5350">
-<h2 id="orgcfe5350">example: Barometric formula</h2>
+<section id="slide-org22da62d">
+<h2 id="org22da62d">example: Barometric formula</h2>
 <p>
 Ideal gas at temperature \(T\) in a gravitational field.
 </p>
@@ -828,13 +834,12 @@ consider the variation of gas in the atmosphere.
 </p>
 
 </aside>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgb377b22">
-<h2 id="orgb377b22">example: Maxwell-Boltzmann velocity distribution</h2>
+<section id="slide-org48304a7">
+<h2 id="org48304a7">example: Maxwell-Boltzmann velocity distribution</h2>
 <ul>
 <li><p>
 Kinetic energy:
@@ -865,13 +870,12 @@ P({\bf v}) d{\bf v} &= (2\pi \beta m)^{-3/2} e^{-\beta m v^2/2} d{\bf v}
 </div></li>
 
 </ul>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org0d2731e">
-<h2 id="org0d2731e">Maxwell-Boltzmann velocity distribution</h2>
+<section id="slide-orgf8c3e8b">
+<h2 id="orgf8c3e8b">Maxwell-Boltzmann velocity distribution</h2>
 <img src="../figures/MB_velocity.png" width="40%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
 
 <div>
@@ -880,14 +884,13 @@ f(v_z) = (2\pi \beta m)^{-1/2} e^{-\beta m v_z^2/2}
 \end{align*}
 
 </div>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgdf9a692">
-<h2 id="orgdf9a692">Maxwell-Boltzmann speed distribution</h2>
-<img src="../figures/MB_velocity.png" width="40%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
+<section id="slide-orgce7a0e7">
+<h2 id="orgce7a0e7">Maxwell-Boltzmann speed distribution</h2>
+<img src="../figures/MB_speed.png" width="40%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
 
 <p>
 Speed distribution:
@@ -898,13 +901,12 @@ F(v) dv = (2\pi \beta m)^{-3/2} e^{-\beta m v^2/2} 4\pi v^2 dv
 \end{equation*}
 
 </div>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org9f62ebf">
-<h2 id="org9f62ebf">Grand canonical ensemble</h2>
+<section id="slide-org1702808">
+<h2 id="org1702808">Grand canonical ensemble</h2>
 <object data="../figures/grandcanonical_ensemble.png" width="50%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
     Your browser does not support SVG
 </object>
@@ -922,13 +924,12 @@ F(v) dv = (2\pi \beta m)^{-3/2} e^{-\beta m v^2/2} 4\pi v^2 dv
 <aside class="notes">
 nil
 </aside>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org98cef1b">
-<h2 id="org98cef1b">Grand canonical ensemble</h2>
+<section id="slide-orgc3a2fe0">
+<h2 id="orgc3a2fe0">Grand canonical ensemble</h2>
 <ul>
 <li><p>
 Boltzmann distribution
@@ -967,13 +968,12 @@ d\ln Z_G(\mu, V, \beta) &= - E d\beta + \beta pdV + N d\beta\mu
 </div></li>
 
 </ul>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org36fd319">
-<h2 id="org36fd319">Isothermal-isobaric ensemble</h2>
+<section id="slide-org8fd30f2">
+<h2 id="org8fd30f2">Isothermal-isobaric ensemble</h2>
 <object data="../figures/grandcanonical_ensemble.png" width="50%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
     Your browser does not support SVG
 </object>
@@ -987,13 +987,12 @@ d\ln Z_G(\mu, V, \beta) &= - E d\beta + \beta pdV + N d\beta\mu
 \end{align*}
 
 </div>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org214dcc5">
-<h2 id="org214dcc5">Isothermal-isobaric ensemble</h2>
+<section id="slide-orgace386c">
+<h2 id="orgace386c">Isothermal-isobaric ensemble</h2>
 <ul>
 <li><p>
 Boltmann distribution
@@ -1055,14 +1054,12 @@ d \ln\Delta(N,\beta p, \beta)
 <aside class="notes">
 nil
 </aside>
-
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgc2bddf2">
-<h2 id="orgc2bddf2">Simple fluids</h2>
+<section id="slide-org96df9de">
+<h2 id="org96df9de">Simple fluids</h2>
 <ul>
 <li>\(N\) spherical atoms of mass \(m\)</li>
 <li>position of atom \(\alpha\) is \({\bf r}_\alpha\)</li>
@@ -1085,13 +1082,12 @@ K({\bf p}_1,\dots,{\bf p}_N)
 </div></li>
 
 </ul>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgef31a64">
-<h2 id="orgef31a64">Fluid structure</h2>
+<section id="slide-orgf62a15a">
+<h2 id="orgf62a15a">Fluid structure</h2>
 <ul>
 <li><p>
 The $n$-particle density \(\rho^{(n)}({\bf r}_1,\dots,{\bf r}_n)\)
@@ -1127,13 +1123,12 @@ This normalization means that, for a homogeneous system,
 </div></li>
 
 </ul>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgba1c3dd">
-<h2 id="orgba1c3dd">n-particle correlation function</h2>
+<section id="slide-org39b8e72">
+<h2 id="org39b8e72">n-particle correlation function</h2>
 <ul>
 <li><p>
 The $n$-particle distribution function \(g^{(n)}({\bf r}_1,\dots,{\bf r}_n)\) is defined as
@@ -1170,13 +1165,12 @@ For an ideal gas (i.e., \(U=0\)):
 </div></li>
 
 </ul>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org8eba8f9">
-<h2 id="org8eba8f9">radial distribution function</h2>
+<section id="slide-orga6c1a73">
+<h2 id="orga6c1a73">radial distribution function</h2>
 <ul>
 <li><p>
 \(n=2\): pair density and pair distribution function in a homogeneous fluid
@@ -1217,22 +1211,20 @@ where \(r = |{\bf r}_1-{\bf r}_2|\)
 </p></li>
 
 </ul>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgc4a2ed9">
-<h2 id="orgc4a2ed9">radial distribution function</h2>
+<section id="slide-org4e47461">
+<h2 id="org4e47461">radial distribution function</h2>
 <img src="../figures/bitmap/gofr1.png" width="40%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
 <img src="../figures/bitmap/spheres.png" width="40%" height="auto" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org1f983fb">
-<h2 id="org1f983fb">radial distribution function</h2>
+<section id="slide-org1f33ca0">
+<h2 id="org1f33ca0">radial distribution function</h2>
 <ul>
 <li><p>
 Energy 
@@ -1271,13 +1263,12 @@ compressibility equation
 <aside class="notes">
 nil
 </aside>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgf3fd198">
-<h2 id="orgf3fd198">structure factor</h2>
+<section id="slide-org7cce4ac">
+<h2 id="org7cce4ac">structure factor</h2>
 <ul>
 <li>Fourier component \(\hat{\rho}({\bf k})\) of the instantaneous single-particle density</li>
 
@@ -1317,13 +1308,12 @@ S({\bf k}) &= 1 + \rho\int d{\bf r}[g({\bf r})-1] e^{-i{\bf k}\cdot{\bf r}}
 <aside class="notes">
 nil
 </aside>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org27fe195">
-<h2 id="org27fe195">Fourier decomposition</h2>
+<section id="slide-org5f5d118">
+<h2 id="org5f5d118">Fourier decomposition</h2>
 <p>
 Consider the function
 </p>
@@ -1350,21 +1340,19 @@ where \(k_n = 2\pi n\).
 <aside class="notes">
 nil
 </aside>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org4966cab">
-<h2 id="org4966cab">Fourier decomposition</h2>
+<section id="slide-org19a7f4e">
+<h2 id="org19a7f4e">Fourier decomposition</h2>
 <img src="../figures/bitmap/decomposition.png" width="auto" height="80%" style="background:white;color:black; margin:20px; box-shadow: 0px 0px 10px 10px rgba(255,255,255,1);">
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org65d26bb">
-<h2 id="org65d26bb">Structure factor</h2>
+<section id="slide-orgd2de21b">
+<h2 id="orgd2de21b">Structure factor</h2>
 <ul>
 <li>A peak at wavevector \(k\) signals density inhomogeneities on the
 length scale \(2\pi/k\)</li>
@@ -1396,13 +1384,12 @@ length scale \(2\pi/k\)</li>
 \end{align*}
 
 </div>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-orgda12f5a">
-<h2 id="orgda12f5a">Further reading</h2>
+<section id="slide-org34faae8">
+<h2 id="org34faae8">Further reading</h2>
 <ul>
 <li>D Chandler, <i>Introduction to Modern Statistical Mechanics</i> (1987).</li>
 <li>DA McQuarrie, <i>Statistical Mechanics</i> (2000).</li>
@@ -1410,13 +1397,12 @@ length scale \(2\pi/k\)</li>
 <li>JP Hansen and IR McDonald, <i>Theory of Simple Liquids</i>, 3ed (2006).</li>
 
 </ul>
-
 <div class="slide-footer"></div>
 </section>
 </section>
 <section>
-<section id="slide-org44972c2">
-<h2 id="org44972c2">Questions?</h2>
+<section id="slide-org0d24ee7">
+<h2 id="org0d24ee7">Questions?</h2>
 <div class="slide-footer"></div>
 </section>
 </section>
